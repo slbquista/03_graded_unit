@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="604556D4-D2B8-57A7-3438-ED16340D1549" name="gu_staff">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>4ADF02AB-E065-9A30-BD09-4B15F8F36EC2</importedID>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="staff_id" id="0C3179E9-58F7-4D0B-E40B-9451108D5EF3">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:38:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="ACB965F9-B0A3-0054-46B6-8E1AE9897E31">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:38:51 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="648A93EF-7D78-8306-2662-3D9AFC065CEB">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:39:15 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="80685013-A5B0-CDB9-7831-3B6172E71C27">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:39:25 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mobile" id="EBBC76D3-E3E8-3665-360E-17A593C1ED50">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:39:43 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="8526CA1D-0EAB-ACBC-6963-FACF375C14A1">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:39:52 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01984AC6-E139-5472-0420-486126640B5F" name="gu_staff PK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:38:46 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C3179E9-58F7-4D0B-E40B-9451108D5EF3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

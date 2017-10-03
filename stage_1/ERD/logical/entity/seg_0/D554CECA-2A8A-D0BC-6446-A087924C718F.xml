@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D554CECA-2A8A-D0BC-6446-A087924C718F" name="gu_duty">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>3D34F2ED-8F7B-CA8C-1699-3FD8BAC3E1DF</importedID>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="gyle" id="36F96454-C4E1-9AF5-D187-733E67D632DF">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:36:02 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="786861A7-11C7-F68B-D4A5-EEE25FB6AE43">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:36:36 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stamp_start_no" id="0FCAAD74-7A0F-70C3-AB0E-AFAD9FD86D4D">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:36:49 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stamp_end_no" id="1960A27B-D9E5-CD7E-0D1E-5940C6160681">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:37:14 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duty_status" id="40EC3E38-55F0-EAE6-1352-8313F65BAF42">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:37:30 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id1" id="8426C424-09EA-466E-452E-820B59FB3598">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:45:07 UTC</createdTime>
+<generatorID>D42A6CC1-6465-4A81-270F-36E8D02D433A</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<referedAttribute>0C3179E9-58F7-4D0B-E40B-9451108D5EF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DFFA0CA-A195-A2DE-62AD-C6E5D343BF07" name="gu_duty PK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:36:30 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36F96454-C4E1-9AF5-D187-733E67D632DF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

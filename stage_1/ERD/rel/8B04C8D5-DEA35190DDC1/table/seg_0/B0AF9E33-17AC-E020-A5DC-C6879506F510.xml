@@ -1,0 +1,279 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0AF9E33-17AC-E020-A5DC-C6879506F510" name="gu_duty">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>D554CECA-2A8A-D0BC-6446-A087924C718F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>DB7CE859-846F-45A0-67AE-BE5F2CC35D79</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rentalID" id="1E12AE25-AA5A-7122-1025-1E46D6D4BC67">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>1A29E65B-EFAB-EABE-3E13-6AEDC3467BAE</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>9AD09795-46A8-A001-3643-8B4A0271AC6B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="carReg" id="3C81E85A-9458-3DAF-DAEB-FDCEF0FE34B6">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>EE8336B5-AACD-3401-5A5E-46A46AACB2C0</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>FF6F23DC-4B5D-719D-814C-7FEA3F240197</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rentalDays" id="12472096-5175-A333-03DF-D9A67E97BF47">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>F1E09332-8734-97FE-DF6A-BC9A29BE34AD</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>D547A87C-8749-B8AF-1F50-3B09F8335450</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costPerDay" id="EBEB672E-31ED-07DA-C30E-379797F4B2D6">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 21:19:09 UTC</createdTime>
+<generatorID>511A0754-8BC6-A43A-DB9E-9F1C3FF256DA</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pickupDate" id="0B0E450B-6DE6-BDF7-2597-698936A994B5">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>66A2E6EC-547D-99BE-E93C-5B9481FB8EAA</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>E202C934-FE40-9ECA-C968-1B166E3A4D97</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pickupTime" id="A48FDDE3-226E-61EF-6088-E6D2317E1C08">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>FA517D86-02E2-FACE-366F-AD5684FC59EA</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>7A45D1D9-1BD3-6517-58A5-086894E2533E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dropoffDate" id="E391404B-7C60-C0B4-C39E-31FF21843B0D">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>14CA0754-EBF1-9955-92D4-4E119870C5E8</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>8EA04C94-A5EB-0611-3FF4-1945D7960DD7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dropoffTime" id="8E0E92F6-1BB7-3825-E980-7BFF1D9C8536">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>8A71A86E-E68D-B1AB-032E-8F96F812FAC5</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>5B040337-4A8C-7EE2-0717-B083A991C4AE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CR_Bookings_rentalID" id="3E397A4F-E8E4-AEA2-16D7-30DA69D1B689">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>63ADC646-FEC9-0191-A264-C74F2AAE871E</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>DC36A530-2C24-D6DF-D2A6-3B7DBFAE676F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="55F3923B-5E3C-A042-1AA8-D4BEF89ED570" referredColumn="3C8B847B-78A4-8FD0-E9FF-E1F768725E03"/>
+</associations>
+</Column>
+<Column name="gyle" id="F9C07226-14C1-E1FE-1B46-5209007B8421">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>36F96454-C4E1-9AF5-D187-733E67D632DF</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="EFD46CD0-2285-BE06-0F6B-AA642582F75F">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>786861A7-11C7-F68B-D4A5-EEE25FB6AE43</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stamp_start_no" id="1F9F1655-D9BE-77F6-489F-01867DDB1462">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>0FCAAD74-7A0F-70C3-AB0E-AFAD9FD86D4D</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stamp_end_no" id="73CECCFE-05D1-F2D1-3382-38385ADA2185">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>1960A27B-D9E5-CD7E-0D1E-5940C6160681</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duty_status" id="131C2E58-5EBF-A9D3-6185-051EF7690116">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>40EC3E38-55F0-EAE6-1352-8313F65BAF42</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gu_staff_staff_id" id="25F8B657-10B7-AD29-2DFB-23475CBCD7E5">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>8426C424-09EA-466E-452E-820B59FB3598</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0446511B-1D6B-106F-46E7-24D3E2A5EE62" referredColumn="DE7E5B0D-EAEB-D653-E93A-54BA3EFEAD93"/>
+</associations>
+</Column>
+<Column name="gu_batch_rentalID" id="256712C6-E52C-B582-1284-84CD45E7AC3E">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35C63534-9DEB-BD00-3587-E79F5D857EBB" referredColumn="3C8B847B-78A4-8FD0-E9FF-E1F768725E03"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8F85A27-F0C8-74EC-0EC9-5117A7EC2535" name="gu_duty_PK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>4DFFA0CA-A195-A2DE-62AD-C6E5D343BF07</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9C07226-14C1-E1FE-1B46-5209007B8421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75240746-935B-55C3-8FA3-01B8470392B4" name="CR_Rental_PK">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>3341A4B8-3922-5BF3-7B3D-37632E042CDE</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>61BDA1AD-5904-370B-1131-2D8BDF2D2F94</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E12AE25-AA5A-7122-1025-1E46D6D4BC67"/>
+<colUsage columnID="3C81E85A-9458-3DAF-DAEB-FDCEF0FE34B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0175971-0C8B-4CD3-F24A-FB4A8E0C9115" name="gu_duty__IDX">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>133A4758-6937-F362-9C9F-17475953FB0F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="256712C6-E52C-B582-1284-84CD45E7AC3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C1DDC34-E6FC-95EF-D3EB-8471008FAA63" name="CR_Rental_CR_Bookings_FK">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>60605E4E-B28D-E414-3FC2-5C12E5FEFE6F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E397A4F-E8E4-AEA2-16D7-30DA69D1B689"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="452032B5-4A92-318F-4B71-2B2D5DB46F3A" name="gu_duty_gu_batch_FK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>133A4758-6937-F362-9C9F-17475953FB0F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="256712C6-E52C-B582-1284-84CD45E7AC3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64B472B9-B432-4441-0C3E-C89A91043AD0" name="gu_duty_gu_staff_FK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>D42A6CC1-6465-4A81-270F-36E8D02D433A</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25F8B657-10B7-AD29-2DFB-23475CBCD7E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E964B430-2522-666D-A5D0-931B4CD9FF4B" name="gu_storage">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>67C8A402-4D9A-DBFB-989E-7CD96C50FE30</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>6D75B0B1-7A43-A65D-1E3D-16F58588191A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staffID" id="E80104F2-0835-8157-F1D9-E8AA3D9B39E1">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>B2443716-DBBC-5318-4B7A-ED6ED2A39CD0</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>ECC05B78-49A2-6AE4-CB54-474BF40C3D74</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staffFirstName" id="DD4B37AD-B01E-62BC-9604-75346D83E60C">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>064CA63F-F652-1FD3-1834-61A7CBBCC744</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>D831C30D-A260-2CDC-40C6-4B865D667194</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staffLastName" id="89D87209-8256-602E-9D31-5C66FCCF975F">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>6DF02077-DB88-0ECF-D1C7-77D743A197E2</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>FEEC40EB-FD89-CC13-87EA-4A3D4844AEF0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="container_id" id="E069930B-C9AB-D205-BCFA-EA24DC02CDC9">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>895607DE-F4D8-EA47-EF2C-5D6EB1B33614</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="container" id="7AE8FF2F-9A46-5A90-FD7C-D418E6B64281">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>F2E0B99E-4554-DA21-142C-3C4C5C9801C3</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="size" id="BDFA7F8C-1AA6-8466-3FB5-E79C0E6CF63B">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>DCDD1467-0CE4-7A26-D2A5-FE68C4902EB5</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12EF7BA6-B174-A6B1-02E7-C45316249EEF" name="gu_storage_PK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>A6D691D9-6C93-ED21-39B1-56F4219C9CB4</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E069930B-C9AB-D205-BCFA-EA24DC02CDC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33916393-CEA9-230B-41F8-40C4A339AEB9" name="CR_Staff_PK">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>0B7340AB-4C17-C88D-181C-6A55377FEE11</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>B801F2E2-1B46-9E7A-25DF-C548D1301F28</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E80104F2-0835-8157-F1D9-E8AA3D9B39E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

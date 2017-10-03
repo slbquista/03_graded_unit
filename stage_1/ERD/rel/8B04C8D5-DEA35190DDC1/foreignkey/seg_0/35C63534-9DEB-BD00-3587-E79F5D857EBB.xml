@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="35C63534-9DEB-BD00-3587-E79F5D857EBB" containerWithKeyObject="B0AF9E33-17AC-E020-A5DC-C6879506F510" localFKIndex="452032B5-4A92-318F-4B71-2B2D5DB46F3A" name="gu_duty_gu_batch_FK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>133A4758-6937-F362-9C9F-17475953FB0F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>gu_batch</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCF36D85-412F-7329-579B-0F340A598BD6</referredTableID>
+<keyObject>2D3C89A0-2FF6-1B1E-B47E-9F9CD16420EE</keyObject>
+<referredKeyID>2D3C89A0-2FF6-1B1E-B47E-9F9CD16420EE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rentalID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

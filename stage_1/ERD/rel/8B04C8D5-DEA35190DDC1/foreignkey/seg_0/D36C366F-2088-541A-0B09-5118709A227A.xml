@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D36C366F-2088-541A-0B09-5118709A227A" containerWithKeyObject="CCF36D85-412F-7329-579B-0F340A598BD6" localFKIndex="412F46A1-5F17-36B5-5D91-6E93C7F6EC1F" name="gu_batch_gu_storage_FK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>37980214-7369-83E6-E49F-D5940BDB81A7</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>gu_storage</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E964B430-2522-666D-A5D0-931B4CD9FF4B</referredTableID>
+<keyObject>12EF7BA6-B174-A6B1-02E7-C45316249EEF</keyObject>
+<referredKeyID>12EF7BA6-B174-A6B1-02E7-C45316249EEF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>container_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

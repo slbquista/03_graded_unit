@@ -1,0 +1,11 @@
+Idea 1:
+Integrating database to last years website Ante Mortem.
+Added functionality could include a login service which could store and optionally display users' information. Once logged in users could comment on comic pages, as well as perhaps use a forum for other discussion.
+It would also enable the comic pages to be displayed individually on each page, without specifically recreating each page's html every time a new image needs uploading.
+
+
+Idea 2:
+Warehouse tracking system for items stored.
+This would track gin, whisky and beer from production to sale. Would be possible to input liters of liquid into system, output bottles as sales.
+Information stored would cover number of bottles, batch number, spirit type, bottle size, ABV, labelled Y/N, duty stamp range, duty paid/suspended.
+The front end would be written as a application rather than website, and allow users to keep track of stock.

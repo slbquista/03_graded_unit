@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8E0AEC38-8FC0-2A9F-79C6-79D5E2A93373" containerWithKeyObject="CCF36D85-412F-7329-579B-0F340A598BD6" localFKIndex="444D1CA7-B7D6-EF43-9A72-D7C400660FA4" name="gu_batch_gu_alcahol_FK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-09-29 11:46:44 UTC</createdTime>
+<generatorID>7BD4DBA8-8759-C88C-46FA-3AED6A3019FA</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>gu_alcahol</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B6E5832A-9820-C80C-7396-17E7AC2A3538</referredTableID>
+<keyObject>D8AB474E-7BD3-4C74-3F1E-EBC488B6FC95</keyObject>
+<referredKeyID>D8AB474E-7BD3-4C74-3F1E-EBC488B6FC95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>custID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

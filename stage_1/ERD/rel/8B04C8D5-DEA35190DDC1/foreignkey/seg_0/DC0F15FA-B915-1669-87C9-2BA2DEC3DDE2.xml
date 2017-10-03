@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DC0F15FA-B915-1669-87C9-2BA2DEC3DDE2" containerWithKeyObject="CCF36D85-412F-7329-579B-0F340A598BD6" localFKIndex="DB8CC8AA-B4D9-6999-0BF6-AD69479784D1" name="CR_Bookings_CR_Customers_FK">
+<createdBy>Finn</createdBy>
+<createdTime>2017-05-03 20:55:58 UTC</createdTime>
+<generatorID>1D460F5E-A5C3-4181-69E1-42265028CCD0</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>905BD815-990B-160D-844B-D4BD3C2C1D61</importedID>
+<referredTableLongName>gu_alcahol</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B6E5832A-9820-C80C-7396-17E7AC2A3538</referredTableID>
+<keyObject>D8AB474E-7BD3-4C74-3F1E-EBC488B6FC95</keyObject>
+<referredKeyID>D8AB474E-7BD3-4C74-3F1E-EBC488B6FC95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>custID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
