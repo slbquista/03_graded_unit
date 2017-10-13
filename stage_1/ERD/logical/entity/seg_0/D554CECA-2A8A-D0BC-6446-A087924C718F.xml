@@ -90,14 +90,29 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="gyle1" id="AD173B01-61DD-FE3E-A95E-494B771C9ED6">
+<createdBy>1516392</createdBy>
+<createdTime>2017-10-06 08:44:25 UTC</createdTime>
+<generatorID>133A4758-6937-F362-9C9F-17475953FB0F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<referedAttribute>0142639A-DE40-BFCE-5F0C-9886DF5FB6E8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4DFFA0CA-A195-A2DE-62AD-C6E5D343BF07" name="gu_duty PK">
 <createdBy>1516392</createdBy>
 <createdTime>2017-09-29 11:36:30 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

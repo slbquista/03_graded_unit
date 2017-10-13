@@ -53,4 +53,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8DA1DE8E-1B19-27A9-130F-7FDA489FE9FA" name="gu_alcahol PK">
+<createdBy>1516392</createdBy>
+<createdTime>2017-10-06 08:44:31 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DCF00402-30D3-A364-9B66-479B0B4E152A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

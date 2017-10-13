@@ -59,6 +59,7 @@
 <engineerTo>
 <item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -88,14 +89,27 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="department" id="678C8AD0-E3B0-EDF3-95BC-3547C5E05BC1">
+<createdBy>1516392</createdBy>
+<createdTime>2017-10-06 08:44:37 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="01984AC6-E139-5472-0420-486126640B5F" name="gu_staff PK">
 <createdBy>1516392</createdBy>
 <createdTime>2017-09-29 11:38:46 UTC</createdTime>
 <ownerDesignName>ERD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="true"/>
+<item key="8B04C8D5-36CE-8D53-3A45-DEA35190DDC1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
