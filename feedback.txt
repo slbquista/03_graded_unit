@@ -1,0 +1,8 @@
+1 --- Interpretation of the project assignment brief.
+1 --- Initial functional and non- functional requirements and initial top level use case model.
+1 --- Information gathered to clarify the brief e.g. background research, such as looking at similar problems.
+1 --- List an appropriate set of resources required.
+
+1 --- Undertaking the analysis using appropriate techniques.
+	No attributes?
+6 --- Data binding design — how the UI objects will link to the business model.
