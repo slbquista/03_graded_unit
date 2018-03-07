@@ -20,17 +20,17 @@ namespace Inventory_Management_Project {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet3")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class graded_unitDataSet : global::System.Data.DataSet {
+    public partial class graded_unitDataSet3 : global::System.Data.DataSet {
         
-        private gu_batchDataTable tablegu_batch;
+        private salesAvailableViewDataTable tablesalesAvailableView;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public graded_unitDataSet() {
+        public graded_unitDataSet3() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected graded_unitDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected graded_unitDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Inventory_Management_Project {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["gu_batch"] != null)) {
-                    base.Tables.Add(new gu_batchDataTable(ds.Tables["gu_batch"]));
+                if ((ds.Tables["salesAvailableView"] != null)) {
+                    base.Tables.Add(new salesAvailableViewDataTable(ds.Tables["salesAvailableView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Inventory_Management_Project {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public gu_batchDataTable gu_batch {
+        public salesAvailableViewDataTable salesAvailableView {
             get {
-                return this.tablegu_batch;
+                return this.tablesalesAvailableView;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            graded_unitDataSet cln = ((graded_unitDataSet)(base.Clone()));
+            graded_unitDataSet3 cln = ((graded_unitDataSet3)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Inventory_Management_Project {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["gu_batch"] != null)) {
-                    base.Tables.Add(new gu_batchDataTable(ds.Tables["gu_batch"]));
+                if ((ds.Tables["salesAvailableView"] != null)) {
+                    base.Tables.Add(new salesAvailableViewDataTable(ds.Tables["salesAvailableView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablegu_batch = ((gu_batchDataTable)(base.Tables["gu_batch"]));
+            this.tablesalesAvailableView = ((salesAvailableViewDataTable)(base.Tables["salesAvailableView"]));
             if ((initTable == true)) {
-                if ((this.tablegu_batch != null)) {
-                    this.tablegu_batch.InitVars();
+                if ((this.tablesalesAvailableView != null)) {
+                    this.tablesalesAvailableView.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "graded_unitDataSet";
+            this.DataSetName = "graded_unitDataSet3";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/graded_unitDataSet.xsd";
+            this.Namespace = "http://tempuri.org/graded_unitDataSet3.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablegu_batch = new gu_batchDataTable();
-            base.Tables.Add(this.tablegu_batch);
+            this.tablesalesAvailableView = new salesAvailableViewDataTable();
+            base.Tables.Add(this.tablesalesAvailableView);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializegu_batch() {
+        private bool ShouldSerializesalesAvailableView() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            graded_unitDataSet ds = new graded_unitDataSet();
+            graded_unitDataSet3 ds = new graded_unitDataSet3();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,21 +270,25 @@ namespace Inventory_Management_Project {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void gu_batchRowChangeEventHandler(object sender, gu_batchRowChangeEvent e);
+        public delegate void salesAvailableViewRowChangeEventHandler(object sender, salesAvailableViewRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class gu_batchDataTable : global::System.Data.TypedTableBase<gu_batchRow> {
+        public partial class salesAvailableViewDataTable : global::System.Data.TypedTableBase<salesAvailableViewRow> {
             
-            private global::System.Data.DataColumn columngyle;
+            private global::System.Data.DataColumn columnDrink;
+            
+            private global::System.Data.DataColumn columnContainer;
+            
+            private global::System.Data.DataColumn columnQuantity;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchDataTable() {
-                this.TableName = "gu_batch";
+            public salesAvailableViewDataTable() {
+                this.TableName = "salesAvailableView";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -292,7 +296,7 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal gu_batchDataTable(global::System.Data.DataTable table) {
+            internal salesAvailableViewDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -309,16 +313,32 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected gu_batchDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected salesAvailableViewDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn gyleColumn {
+            public global::System.Data.DataColumn DrinkColumn {
                 get {
-                    return this.columngyle;
+                    return this.columnDrink;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ContainerColumn {
+                get {
+                    return this.columnContainer;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn QuantityColumn {
+                get {
+                    return this.columnQuantity;
                 }
             }
             
@@ -333,52 +353,47 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow this[int index] {
+            public salesAvailableViewRow this[int index] {
                 get {
-                    return ((gu_batchRow)(this.Rows[index]));
+                    return ((salesAvailableViewRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowChanging;
+            public event salesAvailableViewRowChangeEventHandler salesAvailableViewRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowChanged;
+            public event salesAvailableViewRowChangeEventHandler salesAvailableViewRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowDeleting;
+            public event salesAvailableViewRowChangeEventHandler salesAvailableViewRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowDeleted;
+            public event salesAvailableViewRowChangeEventHandler salesAvailableViewRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addgu_batchRow(gu_batchRow row) {
+            public void AddsalesAvailableViewRow(salesAvailableViewRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Addgu_batchRow(string gyle) {
-                gu_batchRow rowgu_batchRow = ((gu_batchRow)(this.NewRow()));
+            public salesAvailableViewRow AddsalesAvailableViewRow(string Drink, string Container, decimal Quantity) {
+                salesAvailableViewRow rowsalesAvailableViewRow = ((salesAvailableViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        gyle};
-                rowgu_batchRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowgu_batchRow);
-                return rowgu_batchRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow FindBygyle(string gyle) {
-                return ((gu_batchRow)(this.Rows.Find(new object[] {
-                            gyle})));
+                        Drink,
+                        Container,
+                        Quantity};
+                rowsalesAvailableViewRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowsalesAvailableViewRow);
+                return rowsalesAvailableViewRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                gu_batchDataTable cln = ((gu_batchDataTable)(base.Clone()));
+                salesAvailableViewDataTable cln = ((salesAvailableViewDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -386,51 +401,57 @@ namespace Inventory_Management_Project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new gu_batchDataTable();
+                return new salesAvailableViewDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columngyle = base.Columns["gyle"];
+                this.columnDrink = base.Columns["Drink"];
+                this.columnContainer = base.Columns["Container"];
+                this.columnQuantity = base.Columns["Quantity"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columngyle = new global::System.Data.DataColumn("gyle", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngyle);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columngyle}, true));
-                this.columngyle.AllowDBNull = false;
-                this.columngyle.Unique = true;
-                this.columngyle.MaxLength = 10;
+                this.columnDrink = new global::System.Data.DataColumn("Drink", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDrink);
+                this.columnContainer = new global::System.Data.DataColumn("Container", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnContainer);
+                this.columnQuantity = new global::System.Data.DataColumn("Quantity", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnQuantity);
+                this.columnDrink.AllowDBNull = false;
+                this.columnDrink.MaxLength = 20;
+                this.columnContainer.AllowDBNull = false;
+                this.columnContainer.MaxLength = 20;
+                this.columnQuantity.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Newgu_batchRow() {
-                return ((gu_batchRow)(this.NewRow()));
+            public salesAvailableViewRow NewsalesAvailableViewRow() {
+                return ((salesAvailableViewRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new gu_batchRow(builder);
+                return new salesAvailableViewRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(gu_batchRow);
+                return typeof(salesAvailableViewRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.gu_batchRowChanged != null)) {
-                    this.gu_batchRowChanged(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.salesAvailableViewRowChanged != null)) {
+                    this.salesAvailableViewRowChanged(this, new salesAvailableViewRowChangeEvent(((salesAvailableViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -438,8 +459,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.gu_batchRowChanging != null)) {
-                    this.gu_batchRowChanging(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.salesAvailableViewRowChanging != null)) {
+                    this.salesAvailableViewRowChanging(this, new salesAvailableViewRowChangeEvent(((salesAvailableViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -447,8 +468,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.gu_batchRowDeleted != null)) {
-                    this.gu_batchRowDeleted(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.salesAvailableViewRowDeleted != null)) {
+                    this.salesAvailableViewRowDeleted(this, new salesAvailableViewRowChangeEvent(((salesAvailableViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -456,14 +477,14 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.gu_batchRowDeleting != null)) {
-                    this.gu_batchRowDeleting(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.salesAvailableViewRowDeleting != null)) {
+                    this.salesAvailableViewRowDeleting(this, new salesAvailableViewRowChangeEvent(((salesAvailableViewRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removegu_batchRow(gu_batchRow row) {
+            public void RemovesalesAvailableViewRow(salesAvailableViewRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -472,7 +493,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                graded_unitDataSet3 ds = new graded_unitDataSet3();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -490,7 +511,7 @@ namespace Inventory_Management_Project {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "gu_batchDataTable";
+                attribute2.FixedValue = "salesAvailableViewDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -534,25 +555,47 @@ namespace Inventory_Management_Project {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class gu_batchRow : global::System.Data.DataRow {
+        public partial class salesAvailableViewRow : global::System.Data.DataRow {
             
-            private gu_batchDataTable tablegu_batch;
+            private salesAvailableViewDataTable tablesalesAvailableView;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal gu_batchRow(global::System.Data.DataRowBuilder rb) : 
+            internal salesAvailableViewRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablegu_batch = ((gu_batchDataTable)(this.Table));
+                this.tablesalesAvailableView = ((salesAvailableViewDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string gyle {
+            public string Drink {
                 get {
-                    return ((string)(this[this.tablegu_batch.gyleColumn]));
+                    return ((string)(this[this.tablesalesAvailableView.DrinkColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.gyleColumn] = value;
+                    this[this.tablesalesAvailableView.DrinkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Container {
+                get {
+                    return ((string)(this[this.tablesalesAvailableView.ContainerColumn]));
+                }
+                set {
+                    this[this.tablesalesAvailableView.ContainerColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Quantity {
+                get {
+                    return ((decimal)(this[this.tablesalesAvailableView.QuantityColumn]));
+                }
+                set {
+                    this[this.tablesalesAvailableView.QuantityColumn] = value;
                 }
             }
         }
@@ -561,22 +604,22 @@ namespace Inventory_Management_Project {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class gu_batchRowChangeEvent : global::System.EventArgs {
+        public class salesAvailableViewRowChangeEvent : global::System.EventArgs {
             
-            private gu_batchRow eventRow;
+            private salesAvailableViewRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRowChangeEvent(gu_batchRow row, global::System.Data.DataRowAction action) {
+            public salesAvailableViewRowChangeEvent(salesAvailableViewRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Row {
+            public salesAvailableViewRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -592,7 +635,7 @@ namespace Inventory_Management_Project {
         }
     }
 }
-namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
+namespace Inventory_Management_Project.graded_unitDataSet3TableAdapters {
     
     
     /// <summary>
@@ -604,7 +647,7 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class gu_batchTableAdapter : global::System.ComponentModel.Component {
+    public partial class salesAvailableViewTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -618,7 +661,7 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public gu_batchTableAdapter() {
+        public salesAvailableViewTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -715,21 +758,11 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "gu_batch";
-            tableMapping.ColumnMappings.Add("gyle", "gyle");
+            tableMapping.DataSetTable = "salesAvailableView";
+            tableMapping.ColumnMappings.Add("Drink", "Drink");
+            tableMapping.ColumnMappings.Add("Container", "Container");
+            tableMapping.ColumnMappings.Add("Quantity", "Quantity");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[gu_batch] WHERE (([gyle] = @Original_gyle))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[gu_batch] SET [gyle] = @gyle WHERE (([gyle] = @Original_gyle));\r\nSE" +
-                "LECT gyle FROM gu_batch WHERE (gyle = @gyle)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -745,7 +778,7 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT gyle FROM dbo.gu_batch";
+            this._commandCollection[0].CommandText = "SELECT Drink, Container, Quantity FROM dbo.salesAvailableView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -753,7 +786,7 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_batchDataTable dataTable) {
+        public virtual int Fill(graded_unitDataSet3.salesAvailableViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -766,108 +799,11 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_batchDataTable GetData() {
+        public virtual graded_unitDataSet3.salesAvailableViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_batchDataTable dataTable = new graded_unitDataSet.gu_batchDataTable();
+            graded_unitDataSet3.salesAvailableViewDataTable dataTable = new graded_unitDataSet3.salesAvailableViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_batchDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "gu_batch");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_gyle) {
-            if ((Original_gyle == null)) {
-                throw new global::System.ArgumentNullException("Original_gyle");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_gyle));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string gyle, string Original_gyle) {
-            if ((gyle == null)) {
-                throw new global::System.ArgumentNullException("gyle");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(gyle));
-            }
-            if ((Original_gyle == null)) {
-                throw new global::System.ArgumentNullException("Original_gyle");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Original_gyle));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Original_gyle) {
-            return this.Update(Original_gyle, Original_gyle);
         }
     }
     
@@ -883,8 +819,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private gu_batchTableAdapter _gu_batchTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -897,20 +831,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public gu_batchTableAdapter gu_batchTableAdapter {
-            get {
-                return this._gu_batchTableAdapter;
-            }
-            set {
-                this._gu_batchTableAdapter = value;
             }
         }
         
@@ -933,10 +853,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._gu_batchTableAdapter != null) 
-                            && (this._gu_batchTableAdapter.Connection != null))) {
-                    return this._gu_batchTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -950,9 +866,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._gu_batchTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -962,17 +875,8 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(graded_unitDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -981,16 +885,8 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(graded_unitDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -999,16 +895,8 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(graded_unitDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1041,17 +929,12 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(graded_unitDataSet dataSet) {
+        public virtual int UpdateAll(graded_unitDataSet3 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._gu_batchTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._gu_batchTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1085,15 +968,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._gu_batchTableAdapter != null)) {
-                    revertConnections.Add(this._gu_batchTableAdapter, this._gu_batchTableAdapter.Connection);
-                    this._gu_batchTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._gu_batchTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._gu_batchTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._gu_batchTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._gu_batchTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1151,10 +1025,6 @@ namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._gu_batchTableAdapter != null)) {
-                    this._gu_batchTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gu_batchTableAdapter]));
-                    this._gu_batchTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

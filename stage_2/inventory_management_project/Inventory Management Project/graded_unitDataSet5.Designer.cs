@@ -20,17 +20,17 @@ namespace Inventory_Management_Project {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet5")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class graded_unitDataSet1 : global::System.Data.DataSet {
+    public partial class graded_unitDataSet5 : global::System.Data.DataSet {
         
-        private gu_batchDataTable tablegu_batch;
+        private packagingDutyRecordsViewDataTable tablepackagingDutyRecordsView;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public graded_unitDataSet1() {
+        public graded_unitDataSet5() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected graded_unitDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected graded_unitDataSet5(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Inventory_Management_Project {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["gu_batch"] != null)) {
-                    base.Tables.Add(new gu_batchDataTable(ds.Tables["gu_batch"]));
+                if ((ds.Tables["packagingDutyRecordsView"] != null)) {
+                    base.Tables.Add(new packagingDutyRecordsViewDataTable(ds.Tables["packagingDutyRecordsView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Inventory_Management_Project {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public gu_batchDataTable gu_batch {
+        public packagingDutyRecordsViewDataTable packagingDutyRecordsView {
             get {
-                return this.tablegu_batch;
+                return this.tablepackagingDutyRecordsView;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            graded_unitDataSet1 cln = ((graded_unitDataSet1)(base.Clone()));
+            graded_unitDataSet5 cln = ((graded_unitDataSet5)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Inventory_Management_Project {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["gu_batch"] != null)) {
-                    base.Tables.Add(new gu_batchDataTable(ds.Tables["gu_batch"]));
+                if ((ds.Tables["packagingDutyRecordsView"] != null)) {
+                    base.Tables.Add(new packagingDutyRecordsViewDataTable(ds.Tables["packagingDutyRecordsView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablegu_batch = ((gu_batchDataTable)(base.Tables["gu_batch"]));
+            this.tablepackagingDutyRecordsView = ((packagingDutyRecordsViewDataTable)(base.Tables["packagingDutyRecordsView"]));
             if ((initTable == true)) {
-                if ((this.tablegu_batch != null)) {
-                    this.tablegu_batch.InitVars();
+                if ((this.tablepackagingDutyRecordsView != null)) {
+                    this.tablepackagingDutyRecordsView.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "graded_unitDataSet1";
+            this.DataSetName = "graded_unitDataSet5";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/graded_unitDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/graded_unitDataSet5.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablegu_batch = new gu_batchDataTable();
-            base.Tables.Add(this.tablegu_batch);
+            this.tablepackagingDutyRecordsView = new packagingDutyRecordsViewDataTable();
+            base.Tables.Add(this.tablepackagingDutyRecordsView);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializegu_batch() {
+        private bool ShouldSerializepackagingDutyRecordsView() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            graded_unitDataSet1 ds = new graded_unitDataSet1();
+            graded_unitDataSet5 ds = new graded_unitDataSet5();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,35 +270,29 @@ namespace Inventory_Management_Project {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void gu_batchRowChangeEventHandler(object sender, gu_batchRowChangeEvent e);
+        public delegate void packagingDutyRecordsViewRowChangeEventHandler(object sender, packagingDutyRecordsViewRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class gu_batchDataTable : global::System.Data.TypedTableBase<gu_batchRow> {
+        public partial class packagingDutyRecordsViewDataTable : global::System.Data.TypedTableBase<packagingDutyRecordsViewRow> {
             
-            private global::System.Data.DataColumn columngyle;
+            private global::System.Data.DataColumn columnGyle;
             
-            private global::System.Data.DataColumn columncontainer_id;
+            private global::System.Data.DataColumn columnEmployee;
             
-            private global::System.Data.DataColumn columnnumber_of_items;
+            private global::System.Data.DataColumn columnStart_number;
             
-            private global::System.Data.DataColumn columnstorage_location;
+            private global::System.Data.DataColumn columnEnd_number;
             
-            private global::System.Data.DataColumn columnfilled;
-            
-            private global::System.Data.DataColumn columndate_filled;
-            
-            private global::System.Data.DataColumn columnpackaged;
-            
-            private global::System.Data.DataColumn columndrink_id;
+            private global::System.Data.DataColumn columnStatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchDataTable() {
-                this.TableName = "gu_batch";
+            public packagingDutyRecordsViewDataTable() {
+                this.TableName = "packagingDutyRecordsView";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -306,7 +300,7 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal gu_batchDataTable(global::System.Data.DataTable table) {
+            internal packagingDutyRecordsViewDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -323,72 +317,48 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected gu_batchDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected packagingDutyRecordsViewDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn gyleColumn {
+            public global::System.Data.DataColumn GyleColumn {
                 get {
-                    return this.columngyle;
+                    return this.columnGyle;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn container_idColumn {
+            public global::System.Data.DataColumn EmployeeColumn {
                 get {
-                    return this.columncontainer_id;
+                    return this.columnEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn number_of_itemsColumn {
+            public global::System.Data.DataColumn Start_numberColumn {
                 get {
-                    return this.columnnumber_of_items;
+                    return this.columnStart_number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn storage_locationColumn {
+            public global::System.Data.DataColumn End_numberColumn {
                 get {
-                    return this.columnstorage_location;
+                    return this.columnEnd_number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn filledColumn {
+            public global::System.Data.DataColumn StatusColumn {
                 get {
-                    return this.columnfilled;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn date_filledColumn {
-                get {
-                    return this.columndate_filled;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn packagedColumn {
-                get {
-                    return this.columnpackaged;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn drink_idColumn {
-                get {
-                    return this.columndrink_id;
+                    return this.columnStatus;
                 }
             }
             
@@ -403,59 +373,56 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow this[int index] {
+            public packagingDutyRecordsViewRow this[int index] {
                 get {
-                    return ((gu_batchRow)(this.Rows[index]));
+                    return ((packagingDutyRecordsViewRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowChanging;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowChanged;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowDeleting;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event gu_batchRowChangeEventHandler gu_batchRowDeleted;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addgu_batchRow(gu_batchRow row) {
+            public void AddpackagingDutyRecordsViewRow(packagingDutyRecordsViewRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Addgu_batchRow(string gyle, decimal container_id, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, decimal drink_id) {
-                gu_batchRow rowgu_batchRow = ((gu_batchRow)(this.NewRow()));
+            public packagingDutyRecordsViewRow AddpackagingDutyRecordsViewRow(string Gyle, string Employee, string Start_number, string End_number, string Status) {
+                packagingDutyRecordsViewRow rowpackagingDutyRecordsViewRow = ((packagingDutyRecordsViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        gyle,
-                        container_id,
-                        number_of_items,
-                        storage_location,
-                        filled,
-                        date_filled,
-                        packaged,
-                        drink_id};
-                rowgu_batchRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowgu_batchRow);
-                return rowgu_batchRow;
+                        Gyle,
+                        Employee,
+                        Start_number,
+                        End_number,
+                        Status};
+                rowpackagingDutyRecordsViewRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowpackagingDutyRecordsViewRow);
+                return rowpackagingDutyRecordsViewRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow FindBygyle(string gyle) {
-                return ((gu_batchRow)(this.Rows.Find(new object[] {
-                            gyle})));
+            public packagingDutyRecordsViewRow FindByGyle(string Gyle) {
+                return ((packagingDutyRecordsViewRow)(this.Rows.Find(new object[] {
+                            Gyle})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                gu_batchDataTable cln = ((gu_batchDataTable)(base.Clone()));
+                packagingDutyRecordsViewDataTable cln = ((packagingDutyRecordsViewDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -463,82 +430,71 @@ namespace Inventory_Management_Project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new gu_batchDataTable();
+                return new packagingDutyRecordsViewDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columngyle = base.Columns["gyle"];
-                this.columncontainer_id = base.Columns["container_id"];
-                this.columnnumber_of_items = base.Columns["number_of_items"];
-                this.columnstorage_location = base.Columns["storage_location"];
-                this.columnfilled = base.Columns["filled"];
-                this.columndate_filled = base.Columns["date_filled"];
-                this.columnpackaged = base.Columns["packaged"];
-                this.columndrink_id = base.Columns["drink_id"];
+                this.columnGyle = base.Columns["Gyle"];
+                this.columnEmployee = base.Columns["Employee"];
+                this.columnStart_number = base.Columns["Start number"];
+                this.columnEnd_number = base.Columns["End number"];
+                this.columnStatus = base.Columns["Status"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columngyle = new global::System.Data.DataColumn("gyle", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngyle);
-                this.columncontainer_id = new global::System.Data.DataColumn("container_id", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontainer_id);
-                this.columnnumber_of_items = new global::System.Data.DataColumn("number_of_items", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnumber_of_items);
-                this.columnstorage_location = new global::System.Data.DataColumn("storage_location", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstorage_location);
-                this.columnfilled = new global::System.Data.DataColumn("filled", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfilled);
-                this.columndate_filled = new global::System.Data.DataColumn("date_filled", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndate_filled);
-                this.columnpackaged = new global::System.Data.DataColumn("packaged", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpackaged);
-                this.columndrink_id = new global::System.Data.DataColumn("drink_id", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndrink_id);
+                this.columnGyle = new global::System.Data.DataColumn("Gyle", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGyle);
+                this.columnEmployee = new global::System.Data.DataColumn("Employee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmployee);
+                this.columnStart_number = new global::System.Data.DataColumn("Start number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStart_number);
+                this.columnEnd_number = new global::System.Data.DataColumn("End number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEnd_number);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columngyle}, true));
-                this.columngyle.AllowDBNull = false;
-                this.columngyle.Unique = true;
-                this.columngyle.MaxLength = 10;
-                this.columncontainer_id.AllowDBNull = false;
-                this.columnnumber_of_items.AllowDBNull = false;
-                this.columnstorage_location.AllowDBNull = false;
-                this.columnstorage_location.MaxLength = 20;
-                this.columnfilled.AllowDBNull = false;
-                this.columnfilled.MaxLength = 1;
-                this.columndate_filled.AllowDBNull = false;
-                this.columnpackaged.AllowDBNull = false;
-                this.columnpackaged.MaxLength = 1;
-                this.columndrink_id.AllowDBNull = false;
+                                this.columnGyle}, true));
+                this.columnGyle.AllowDBNull = false;
+                this.columnGyle.Unique = true;
+                this.columnGyle.MaxLength = 10;
+                this.columnEmployee.ReadOnly = true;
+                this.columnEmployee.MaxLength = 100;
+                this.columnStart_number.AllowDBNull = false;
+                this.columnStart_number.MaxLength = 15;
+                this.columnEnd_number.AllowDBNull = false;
+                this.columnEnd_number.MaxLength = 15;
+                this.columnStatus.AllowDBNull = false;
+                this.columnStatus.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Newgu_batchRow() {
-                return ((gu_batchRow)(this.NewRow()));
+            public packagingDutyRecordsViewRow NewpackagingDutyRecordsViewRow() {
+                return ((packagingDutyRecordsViewRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new gu_batchRow(builder);
+                return new packagingDutyRecordsViewRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(gu_batchRow);
+                return typeof(packagingDutyRecordsViewRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.gu_batchRowChanged != null)) {
-                    this.gu_batchRowChanged(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowChanged != null)) {
+                    this.packagingDutyRecordsViewRowChanged(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -546,8 +502,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.gu_batchRowChanging != null)) {
-                    this.gu_batchRowChanging(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowChanging != null)) {
+                    this.packagingDutyRecordsViewRowChanging(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -555,8 +511,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.gu_batchRowDeleted != null)) {
-                    this.gu_batchRowDeleted(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowDeleted != null)) {
+                    this.packagingDutyRecordsViewRowDeleted(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -564,14 +520,14 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.gu_batchRowDeleting != null)) {
-                    this.gu_batchRowDeleting(this, new gu_batchRowChangeEvent(((gu_batchRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowDeleting != null)) {
+                    this.packagingDutyRecordsViewRowDeleting(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removegu_batchRow(gu_batchRow row) {
+            public void RemovepackagingDutyRecordsViewRow(packagingDutyRecordsViewRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -580,7 +536,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet1 ds = new graded_unitDataSet1();
+                graded_unitDataSet5 ds = new graded_unitDataSet5();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -598,7 +554,7 @@ namespace Inventory_Management_Project {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "gu_batchDataTable";
+                attribute2.FixedValue = "packagingDutyRecordsViewDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -642,103 +598,87 @@ namespace Inventory_Management_Project {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class gu_batchRow : global::System.Data.DataRow {
+        public partial class packagingDutyRecordsViewRow : global::System.Data.DataRow {
             
-            private gu_batchDataTable tablegu_batch;
+            private packagingDutyRecordsViewDataTable tablepackagingDutyRecordsView;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal gu_batchRow(global::System.Data.DataRowBuilder rb) : 
+            internal packagingDutyRecordsViewRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablegu_batch = ((gu_batchDataTable)(this.Table));
+                this.tablepackagingDutyRecordsView = ((packagingDutyRecordsViewDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string gyle {
+            public string Gyle {
                 get {
-                    return ((string)(this[this.tablegu_batch.gyleColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.GyleColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.gyleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal container_id {
-                get {
-                    return ((decimal)(this[this.tablegu_batch.container_idColumn]));
-                }
-                set {
-                    this[this.tablegu_batch.container_idColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.GyleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal number_of_items {
+            public string Employee {
                 get {
-                    return ((decimal)(this[this.tablegu_batch.number_of_itemsColumn]));
+                    try {
+                        return ((string)(this[this.tablepackagingDutyRecordsView.EmployeeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Employee\' in table \'packagingDutyRecordsView\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tablegu_batch.number_of_itemsColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.EmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string storage_location {
+            public string Start_number {
                 get {
-                    return ((string)(this[this.tablegu_batch.storage_locationColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.Start_numberColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.storage_locationColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.Start_numberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string filled {
+            public string End_number {
                 get {
-                    return ((string)(this[this.tablegu_batch.filledColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.End_numberColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.filledColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.End_numberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime date_filled {
+            public string Status {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegu_batch.date_filledColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.StatusColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.date_filledColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.StatusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string packaged {
-                get {
-                    return ((string)(this[this.tablegu_batch.packagedColumn]));
-                }
-                set {
-                    this[this.tablegu_batch.packagedColumn] = value;
-                }
+            public bool IsEmployeeNull() {
+                return this.IsNull(this.tablepackagingDutyRecordsView.EmployeeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal drink_id {
-                get {
-                    return ((decimal)(this[this.tablegu_batch.drink_idColumn]));
-                }
-                set {
-                    this[this.tablegu_batch.drink_idColumn] = value;
-                }
+            public void SetEmployeeNull() {
+                this[this.tablepackagingDutyRecordsView.EmployeeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -746,22 +686,22 @@ namespace Inventory_Management_Project {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class gu_batchRowChangeEvent : global::System.EventArgs {
+        public class packagingDutyRecordsViewRowChangeEvent : global::System.EventArgs {
             
-            private gu_batchRow eventRow;
+            private packagingDutyRecordsViewRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRowChangeEvent(gu_batchRow row, global::System.Data.DataRowAction action) {
+            public packagingDutyRecordsViewRowChangeEvent(packagingDutyRecordsViewRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Row {
+            public packagingDutyRecordsViewRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -777,7 +717,7 @@ namespace Inventory_Management_Project {
         }
     }
 }
-namespace Inventory_Management_Project.graded_unitDataSet1TableAdapters {
+namespace Inventory_Management_Project.graded_unitDataSet5TableAdapters {
     
     
     /// <summary>
@@ -789,7 +729,7 @@ namespace Inventory_Management_Project.graded_unitDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class gu_batchTableAdapter : global::System.ComponentModel.Component {
+    public partial class packagingDutyRecordsViewTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -803,7 +743,7 @@ namespace Inventory_Management_Project.graded_unitDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public gu_batchTableAdapter() {
+        public packagingDutyRecordsViewTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -900,62 +840,13 @@ namespace Inventory_Management_Project.graded_unitDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "gu_batch";
-            tableMapping.ColumnMappings.Add("gyle", "gyle");
-            tableMapping.ColumnMappings.Add("container_id", "container_id");
-            tableMapping.ColumnMappings.Add("number_of_items", "number_of_items");
-            tableMapping.ColumnMappings.Add("storage_location", "storage_location");
-            tableMapping.ColumnMappings.Add("filled", "filled");
-            tableMapping.ColumnMappings.Add("date_filled", "date_filled");
-            tableMapping.ColumnMappings.Add("packaged", "packaged");
-            tableMapping.ColumnMappings.Add("drink_id", "drink_id");
+            tableMapping.DataSetTable = "packagingDutyRecordsView";
+            tableMapping.ColumnMappings.Add("Gyle", "Gyle");
+            tableMapping.ColumnMappings.Add("Employee", "Employee");
+            tableMapping.ColumnMappings.Add("Start number", "Start number");
+            tableMapping.ColumnMappings.Add("End number", "End number");
+            tableMapping.ColumnMappings.Add("Status", "Status");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[gu_batch] WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([storage_location] = @Original_storage_location) AND ([filled] = @Original_filled) AND ([date_filled] = @Original_date_filled) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[gu_batch] ([gyle], [container_id], [number_of_items], [storage_location], [filled], [date_filled], [packaged], [drink_id]) VALUES (@gyle, @container_id, @number_of_items, @storage_location, @filled, @date_filled, @packaged, @drink_id);
-SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[gu_batch] SET [gyle] = @gyle, [container_id] = @container_id, [number_of_items] = @number_of_items, [storage_location] = @storage_location, [filled] = @filled, [date_filled] = @date_filled, [packaged] = @packaged, [drink_id] = @drink_id WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([storage_location] = @Original_storage_location) AND ([filled] = @Original_filled) AND ([date_filled] = @Original_date_filled) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id));
-SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -971,8 +862,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled" +
-                ", packaged, drink_id FROM dbo.gu_batch";
+            this._commandCollection[0].CommandText = "SELECT Gyle, Employee, [Start number], [End number], Status FROM dbo.packagingDut" +
+                "yRecordsView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -980,7 +871,7 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet1.gu_batchDataTable dataTable) {
+        public virtual int Fill(graded_unitDataSet5.packagingDutyRecordsViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -993,239 +884,11 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet1.gu_batchDataTable GetData() {
+        public virtual graded_unitDataSet5.packagingDutyRecordsViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet1.gu_batchDataTable dataTable = new graded_unitDataSet1.gu_batchDataTable();
+            graded_unitDataSet5.packagingDutyRecordsViewDataTable dataTable = new graded_unitDataSet5.packagingDutyRecordsViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet1.gu_batchDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "gu_batch");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, string Original_storage_location, string Original_filled, System.DateTime Original_date_filled, string Original_packaged, decimal Original_drink_id) {
-            if ((Original_gyle == null)) {
-                throw new global::System.ArgumentNullException("Original_gyle");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_gyle));
-            }
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((decimal)(Original_container_id));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_number_of_items));
-            if ((Original_storage_location == null)) {
-                throw new global::System.ArgumentNullException("Original_storage_location");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_storage_location));
-            }
-            if ((Original_filled == null)) {
-                throw new global::System.ArgumentNullException("Original_filled");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_filled));
-            }
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(Original_date_filled));
-            if ((Original_packaged == null)) {
-                throw new global::System.ArgumentNullException("Original_packaged");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_packaged));
-            }
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((decimal)(Original_drink_id));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string gyle, decimal container_id, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, decimal drink_id) {
-            if ((gyle == null)) {
-                throw new global::System.ArgumentNullException("gyle");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(gyle));
-            }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(container_id));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(number_of_items));
-            if ((storage_location == null)) {
-                throw new global::System.ArgumentNullException("storage_location");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(storage_location));
-            }
-            if ((filled == null)) {
-                throw new global::System.ArgumentNullException("filled");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(filled));
-            }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(date_filled));
-            if ((packaged == null)) {
-                throw new global::System.ArgumentNullException("packaged");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(packaged));
-            }
-            this.Adapter.InsertCommand.Parameters[7].Value = ((decimal)(drink_id));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    string gyle, 
-                    decimal container_id, 
-                    decimal number_of_items, 
-                    string storage_location, 
-                    string filled, 
-                    System.DateTime date_filled, 
-                    string packaged, 
-                    decimal drink_id, 
-                    string Original_gyle, 
-                    decimal Original_container_id, 
-                    decimal Original_number_of_items, 
-                    string Original_storage_location, 
-                    string Original_filled, 
-                    System.DateTime Original_date_filled, 
-                    string Original_packaged, 
-                    decimal Original_drink_id) {
-            if ((gyle == null)) {
-                throw new global::System.ArgumentNullException("gyle");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(gyle));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(container_id));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(number_of_items));
-            if ((storage_location == null)) {
-                throw new global::System.ArgumentNullException("storage_location");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(storage_location));
-            }
-            if ((filled == null)) {
-                throw new global::System.ArgumentNullException("filled");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(filled));
-            }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(date_filled));
-            if ((packaged == null)) {
-                throw new global::System.ArgumentNullException("packaged");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(packaged));
-            }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(drink_id));
-            if ((Original_gyle == null)) {
-                throw new global::System.ArgumentNullException("Original_gyle");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_gyle));
-            }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_container_id));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_number_of_items));
-            if ((Original_storage_location == null)) {
-                throw new global::System.ArgumentNullException("Original_storage_location");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_storage_location));
-            }
-            if ((Original_filled == null)) {
-                throw new global::System.ArgumentNullException("Original_filled");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_filled));
-            }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_date_filled));
-            if ((Original_packaged == null)) {
-                throw new global::System.ArgumentNullException("Original_packaged");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_packaged));
-            }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_drink_id));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(decimal container_id, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, decimal drink_id, string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, string Original_storage_location, string Original_filled, System.DateTime Original_date_filled, string Original_packaged, decimal Original_drink_id) {
-            return this.Update(Original_gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id, Original_gyle, Original_container_id, Original_number_of_items, Original_storage_location, Original_filled, Original_date_filled, Original_packaged, Original_drink_id);
         }
     }
     
@@ -1241,8 +904,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         
         private UpdateOrderOption _updateOrder;
         
-        private gu_batchTableAdapter _gu_batchTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1255,20 +916,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public gu_batchTableAdapter gu_batchTableAdapter {
-            get {
-                return this._gu_batchTableAdapter;
-            }
-            set {
-                this._gu_batchTableAdapter = value;
             }
         }
         
@@ -1291,10 +938,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._gu_batchTableAdapter != null) 
-                            && (this._gu_batchTableAdapter.Connection != null))) {
-                    return this._gu_batchTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1308,9 +951,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._gu_batchTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1320,17 +960,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(graded_unitDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1339,16 +970,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(graded_unitDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1357,16 +980,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(graded_unitDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._gu_batchTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.gu_batch.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._gu_batchTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1399,17 +1014,12 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(graded_unitDataSet1 dataSet) {
+        public virtual int UpdateAll(graded_unitDataSet5 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._gu_batchTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._gu_batchTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1443,15 +1053,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._gu_batchTableAdapter != null)) {
-                    revertConnections.Add(this._gu_batchTableAdapter, this._gu_batchTableAdapter.Connection);
-                    this._gu_batchTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._gu_batchTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._gu_batchTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._gu_batchTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._gu_batchTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1509,10 +1110,6 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._gu_batchTableAdapter != null)) {
-                    this._gu_batchTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gu_batchTableAdapter]));
-                    this._gu_batchTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
