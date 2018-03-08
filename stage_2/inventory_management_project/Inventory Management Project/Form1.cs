@@ -33,5 +33,10 @@ namespace Inventory_Management_Project
             this.testViewTableAdapter.Fill(this.testView._testView);
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

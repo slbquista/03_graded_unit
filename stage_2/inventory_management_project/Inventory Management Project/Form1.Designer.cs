@@ -49,6 +49,14 @@
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gyleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.drinkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aBVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.containerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizemlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.graded_unitDataSet1 = new Inventory_Management_Project.graded_unitDataSet1();
             this.Tab2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -83,6 +91,23 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.gyleDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.drinkDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.containerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.packagedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.packagingViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.graded_unitDataSet2 = new Inventory_Management_Project.graded_unitDataSet2();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.gyleDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.packagingDutyRecordsViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.graded_unitDataSet5 = new Inventory_Management_Project.graded_unitDataSet5();
             this.Sales = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -96,51 +121,26 @@
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.testView = new Inventory_Management_Project.testView();
-            this.testViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.testViewTableAdapter = new Inventory_Management_Project.testViewTableAdapters.testViewTableAdapter();
-            this.graded_unitDataSet1 = new Inventory_Management_Project.graded_unitDataSet1();
-            this.productionViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productionViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet1TableAdapters.productionViewTableAdapter();
-            this.gyleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.drinkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aBVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.containerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sizemlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.graded_unitDataSet2 = new Inventory_Management_Project.graded_unitDataSet2();
-            this.packagingViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.packagingViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet2TableAdapters.packagingViewTableAdapter();
-            this.gyleDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.drinkDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.containerDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.packagedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.graded_unitDataSet3 = new Inventory_Management_Project.graded_unitDataSet3();
-            this.salesAvailableViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.salesAvailableViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet3TableAdapters.salesAvailableViewTableAdapter();
             this.drinkDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.containerDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.graded_unitDataSet4 = new Inventory_Management_Project.graded_unitDataSet4();
-            this.salesSoldViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.salesSoldViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet4TableAdapters.salesSoldViewTableAdapter();
+            this.salesAvailableViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.graded_unitDataSet3 = new Inventory_Management_Project.graded_unitDataSet3();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.drinkDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.containerDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.graded_unitDataSet5 = new Inventory_Management_Project.graded_unitDataSet5();
-            this.packagingDutyRecordsViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.salesSoldViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.graded_unitDataSet4 = new Inventory_Management_Project.graded_unitDataSet4();
+            this.testView = new Inventory_Management_Project.testView();
+            this.testViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.testViewTableAdapter = new Inventory_Management_Project.testViewTableAdapters.testViewTableAdapter();
+            this.productionViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet1TableAdapters.productionViewTableAdapter();
+            this.packagingViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet2TableAdapters.packagingViewTableAdapter();
+            this.salesAvailableViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet3TableAdapters.salesAvailableViewTableAdapter();
+            this.salesSoldViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet4TableAdapters.salesSoldViewTableAdapter();
             this.packagingDutyRecordsViewTableAdapter = new Inventory_Management_Project.graded_unitDataSet5TableAdapters.packagingDutyRecordsViewTableAdapter();
-            this.gyleDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tab_control_1.SuspendLayout();
             this.Production.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -148,6 +148,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet1)).BeginInit();
             this.Tab2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -156,28 +158,26 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packagingViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet2)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packagingDutyRecordsViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet5)).BeginInit();
             this.Sales.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesAvailableViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet3)).BeginInit();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesSoldViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagingViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesAvailableViewBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesSoldViewBindingSource)).BeginInit();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagingDutyRecordsViewBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tab_control_1
@@ -442,6 +442,59 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(746, 483);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // gyleDataGridViewTextBoxColumn
+            // 
+            this.gyleDataGridViewTextBoxColumn.DataPropertyName = "Gyle";
+            this.gyleDataGridViewTextBoxColumn.HeaderText = "Gyle";
+            this.gyleDataGridViewTextBoxColumn.Name = "gyleDataGridViewTextBoxColumn";
+            this.gyleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // drinkDataGridViewTextBoxColumn
+            // 
+            this.drinkDataGridViewTextBoxColumn.DataPropertyName = "Drink";
+            this.drinkDataGridViewTextBoxColumn.HeaderText = "Drink";
+            this.drinkDataGridViewTextBoxColumn.Name = "drinkDataGridViewTextBoxColumn";
+            this.drinkDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // aBVDataGridViewTextBoxColumn
+            // 
+            this.aBVDataGridViewTextBoxColumn.DataPropertyName = "ABV";
+            this.aBVDataGridViewTextBoxColumn.HeaderText = "ABV";
+            this.aBVDataGridViewTextBoxColumn.Name = "aBVDataGridViewTextBoxColumn";
+            this.aBVDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // containerDataGridViewTextBoxColumn
+            // 
+            this.containerDataGridViewTextBoxColumn.DataPropertyName = "Container";
+            this.containerDataGridViewTextBoxColumn.HeaderText = "Container";
+            this.containerDataGridViewTextBoxColumn.Name = "containerDataGridViewTextBoxColumn";
+            this.containerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sizemlDataGridViewTextBoxColumn
+            // 
+            this.sizemlDataGridViewTextBoxColumn.DataPropertyName = "Size (ml)";
+            this.sizemlDataGridViewTextBoxColumn.HeaderText = "Size (ml)";
+            this.sizemlDataGridViewTextBoxColumn.Name = "sizemlDataGridViewTextBoxColumn";
+            this.sizemlDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productionViewBindingSource
+            // 
+            this.productionViewBindingSource.DataMember = "productionView";
+            this.productionViewBindingSource.DataSource = this.graded_unitDataSet1;
+            // 
+            // graded_unitDataSet1
+            // 
+            this.graded_unitDataSet1.DataSetName = "graded_unitDataSet1";
+            this.graded_unitDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Tab2
             // 
@@ -911,6 +964,133 @@
             this.dataGridView2.Size = new System.Drawing.Size(746, 483);
             this.dataGridView2.TabIndex = 1;
             // 
+            // gyleDataGridViewTextBoxColumn1
+            // 
+            this.gyleDataGridViewTextBoxColumn1.DataPropertyName = "Gyle";
+            this.gyleDataGridViewTextBoxColumn1.HeaderText = "Gyle";
+            this.gyleDataGridViewTextBoxColumn1.Name = "gyleDataGridViewTextBoxColumn1";
+            this.gyleDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // drinkDataGridViewTextBoxColumn1
+            // 
+            this.drinkDataGridViewTextBoxColumn1.DataPropertyName = "Drink";
+            this.drinkDataGridViewTextBoxColumn1.HeaderText = "Drink";
+            this.drinkDataGridViewTextBoxColumn1.Name = "drinkDataGridViewTextBoxColumn1";
+            this.drinkDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // containerDataGridViewTextBoxColumn1
+            // 
+            this.containerDataGridViewTextBoxColumn1.DataPropertyName = "Container";
+            this.containerDataGridViewTextBoxColumn1.HeaderText = "Container";
+            this.containerDataGridViewTextBoxColumn1.Name = "containerDataGridViewTextBoxColumn1";
+            this.containerDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn1
+            // 
+            this.quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
+            this.quantityDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // packagedDataGridViewTextBoxColumn
+            // 
+            this.packagedDataGridViewTextBoxColumn.DataPropertyName = "Packaged?";
+            this.packagedDataGridViewTextBoxColumn.HeaderText = "Packaged?";
+            this.packagedDataGridViewTextBoxColumn.Name = "packagedDataGridViewTextBoxColumn";
+            this.packagedDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // locationDataGridViewTextBoxColumn
+            // 
+            this.locationDataGridViewTextBoxColumn.DataPropertyName = "Location";
+            this.locationDataGridViewTextBoxColumn.HeaderText = "Location";
+            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
+            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // packagingViewBindingSource
+            // 
+            this.packagingViewBindingSource.DataMember = "packagingView";
+            this.packagingViewBindingSource.DataSource = this.graded_unitDataSet2;
+            // 
+            // graded_unitDataSet2
+            // 
+            this.graded_unitDataSet2.DataSetName = "graded_unitDataSet2";
+            this.graded_unitDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.dataGridView5);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(749, 486);
+            this.tabPage9.TabIndex = 4;
+            this.tabPage9.Text = "Duty Records";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gyleDataGridViewTextBoxColumn2,
+            this.employeeDataGridViewTextBoxColumn,
+            this.startNumberDataGridViewTextBoxColumn,
+            this.endNumberDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.packagingDutyRecordsViewBindingSource;
+            this.dataGridView5.Location = new System.Drawing.Point(1, 2);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
+            this.dataGridView5.Size = new System.Drawing.Size(746, 483);
+            this.dataGridView5.TabIndex = 2;
+            // 
+            // gyleDataGridViewTextBoxColumn2
+            // 
+            this.gyleDataGridViewTextBoxColumn2.DataPropertyName = "Gyle";
+            this.gyleDataGridViewTextBoxColumn2.HeaderText = "Gyle";
+            this.gyleDataGridViewTextBoxColumn2.Name = "gyleDataGridViewTextBoxColumn2";
+            this.gyleDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // employeeDataGridViewTextBoxColumn
+            // 
+            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
+            this.employeeDataGridViewTextBoxColumn.HeaderText = "Employee";
+            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
+            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // startNumberDataGridViewTextBoxColumn
+            // 
+            this.startNumberDataGridViewTextBoxColumn.DataPropertyName = "Start number";
+            this.startNumberDataGridViewTextBoxColumn.HeaderText = "Start number";
+            this.startNumberDataGridViewTextBoxColumn.Name = "startNumberDataGridViewTextBoxColumn";
+            this.startNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // endNumberDataGridViewTextBoxColumn
+            // 
+            this.endNumberDataGridViewTextBoxColumn.DataPropertyName = "End number";
+            this.endNumberDataGridViewTextBoxColumn.HeaderText = "End number";
+            this.endNumberDataGridViewTextBoxColumn.Name = "endNumberDataGridViewTextBoxColumn";
+            this.endNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // packagingDutyRecordsViewBindingSource
+            // 
+            this.packagingDutyRecordsViewBindingSource.DataMember = "packagingDutyRecordsView";
+            this.packagingDutyRecordsViewBindingSource.DataSource = this.graded_unitDataSet5;
+            // 
+            // graded_unitDataSet5
+            // 
+            this.graded_unitDataSet5.DataSetName = "graded_unitDataSet5";
+            this.graded_unitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Sales
             // 
             this.Sales.Controls.Add(this.tabControl3);
@@ -1087,6 +1267,37 @@
             this.dataGridView3.Size = new System.Drawing.Size(746, 483);
             this.dataGridView3.TabIndex = 2;
             // 
+            // drinkDataGridViewTextBoxColumn2
+            // 
+            this.drinkDataGridViewTextBoxColumn2.DataPropertyName = "Drink";
+            this.drinkDataGridViewTextBoxColumn2.HeaderText = "Drink";
+            this.drinkDataGridViewTextBoxColumn2.Name = "drinkDataGridViewTextBoxColumn2";
+            this.drinkDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // containerDataGridViewTextBoxColumn2
+            // 
+            this.containerDataGridViewTextBoxColumn2.DataPropertyName = "Container";
+            this.containerDataGridViewTextBoxColumn2.HeaderText = "Container";
+            this.containerDataGridViewTextBoxColumn2.Name = "containerDataGridViewTextBoxColumn2";
+            this.containerDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // quantityDataGridViewTextBoxColumn2
+            // 
+            this.quantityDataGridViewTextBoxColumn2.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.Name = "quantityDataGridViewTextBoxColumn2";
+            this.quantityDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // salesAvailableViewBindingSource
+            // 
+            this.salesAvailableViewBindingSource.DataMember = "salesAvailableView";
+            this.salesAvailableViewBindingSource.DataSource = this.graded_unitDataSet3;
+            // 
+            // graded_unitDataSet3
+            // 
+            this.graded_unitDataSet3.DataSetName = "graded_unitDataSet3";
+            this.graded_unitDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.dataGridView4);
@@ -1115,181 +1326,6 @@
             this.dataGridView4.Size = new System.Drawing.Size(746, 483);
             this.dataGridView4.TabIndex = 2;
             // 
-            // testView
-            // 
-            this.testView.DataSetName = "testView";
-            this.testView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // testViewBindingSource
-            // 
-            this.testViewBindingSource.DataMember = "testView";
-            this.testViewBindingSource.DataSource = this.testView;
-            // 
-            // testViewTableAdapter
-            // 
-            this.testViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // graded_unitDataSet1
-            // 
-            this.graded_unitDataSet1.DataSetName = "graded_unitDataSet1";
-            this.graded_unitDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productionViewBindingSource
-            // 
-            this.productionViewBindingSource.DataMember = "productionView";
-            this.productionViewBindingSource.DataSource = this.graded_unitDataSet1;
-            // 
-            // productionViewTableAdapter
-            // 
-            this.productionViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // gyleDataGridViewTextBoxColumn
-            // 
-            this.gyleDataGridViewTextBoxColumn.DataPropertyName = "Gyle";
-            this.gyleDataGridViewTextBoxColumn.HeaderText = "Gyle";
-            this.gyleDataGridViewTextBoxColumn.Name = "gyleDataGridViewTextBoxColumn";
-            this.gyleDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // drinkDataGridViewTextBoxColumn
-            // 
-            this.drinkDataGridViewTextBoxColumn.DataPropertyName = "Drink";
-            this.drinkDataGridViewTextBoxColumn.HeaderText = "Drink";
-            this.drinkDataGridViewTextBoxColumn.Name = "drinkDataGridViewTextBoxColumn";
-            this.drinkDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // aBVDataGridViewTextBoxColumn
-            // 
-            this.aBVDataGridViewTextBoxColumn.DataPropertyName = "ABV";
-            this.aBVDataGridViewTextBoxColumn.HeaderText = "ABV";
-            this.aBVDataGridViewTextBoxColumn.Name = "aBVDataGridViewTextBoxColumn";
-            this.aBVDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            this.quantityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // containerDataGridViewTextBoxColumn
-            // 
-            this.containerDataGridViewTextBoxColumn.DataPropertyName = "Container";
-            this.containerDataGridViewTextBoxColumn.HeaderText = "Container";
-            this.containerDataGridViewTextBoxColumn.Name = "containerDataGridViewTextBoxColumn";
-            this.containerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sizemlDataGridViewTextBoxColumn
-            // 
-            this.sizemlDataGridViewTextBoxColumn.DataPropertyName = "Size (ml)";
-            this.sizemlDataGridViewTextBoxColumn.HeaderText = "Size (ml)";
-            this.sizemlDataGridViewTextBoxColumn.Name = "sizemlDataGridViewTextBoxColumn";
-            this.sizemlDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // graded_unitDataSet2
-            // 
-            this.graded_unitDataSet2.DataSetName = "graded_unitDataSet2";
-            this.graded_unitDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // packagingViewBindingSource
-            // 
-            this.packagingViewBindingSource.DataMember = "packagingView";
-            this.packagingViewBindingSource.DataSource = this.graded_unitDataSet2;
-            // 
-            // packagingViewTableAdapter
-            // 
-            this.packagingViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // gyleDataGridViewTextBoxColumn1
-            // 
-            this.gyleDataGridViewTextBoxColumn1.DataPropertyName = "Gyle";
-            this.gyleDataGridViewTextBoxColumn1.HeaderText = "Gyle";
-            this.gyleDataGridViewTextBoxColumn1.Name = "gyleDataGridViewTextBoxColumn1";
-            this.gyleDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // drinkDataGridViewTextBoxColumn1
-            // 
-            this.drinkDataGridViewTextBoxColumn1.DataPropertyName = "Drink";
-            this.drinkDataGridViewTextBoxColumn1.HeaderText = "Drink";
-            this.drinkDataGridViewTextBoxColumn1.Name = "drinkDataGridViewTextBoxColumn1";
-            this.drinkDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // containerDataGridViewTextBoxColumn1
-            // 
-            this.containerDataGridViewTextBoxColumn1.DataPropertyName = "Container";
-            this.containerDataGridViewTextBoxColumn1.HeaderText = "Container";
-            this.containerDataGridViewTextBoxColumn1.Name = "containerDataGridViewTextBoxColumn1";
-            this.containerDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // quantityDataGridViewTextBoxColumn1
-            // 
-            this.quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
-            this.quantityDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // packagedDataGridViewTextBoxColumn
-            // 
-            this.packagedDataGridViewTextBoxColumn.DataPropertyName = "Packaged?";
-            this.packagedDataGridViewTextBoxColumn.HeaderText = "Packaged?";
-            this.packagedDataGridViewTextBoxColumn.Name = "packagedDataGridViewTextBoxColumn";
-            this.packagedDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "Location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "Location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            this.locationDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // graded_unitDataSet3
-            // 
-            this.graded_unitDataSet3.DataSetName = "graded_unitDataSet3";
-            this.graded_unitDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salesAvailableViewBindingSource
-            // 
-            this.salesAvailableViewBindingSource.DataMember = "salesAvailableView";
-            this.salesAvailableViewBindingSource.DataSource = this.graded_unitDataSet3;
-            // 
-            // salesAvailableViewTableAdapter
-            // 
-            this.salesAvailableViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // drinkDataGridViewTextBoxColumn2
-            // 
-            this.drinkDataGridViewTextBoxColumn2.DataPropertyName = "Drink";
-            this.drinkDataGridViewTextBoxColumn2.HeaderText = "Drink";
-            this.drinkDataGridViewTextBoxColumn2.Name = "drinkDataGridViewTextBoxColumn2";
-            this.drinkDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // containerDataGridViewTextBoxColumn2
-            // 
-            this.containerDataGridViewTextBoxColumn2.DataPropertyName = "Container";
-            this.containerDataGridViewTextBoxColumn2.HeaderText = "Container";
-            this.containerDataGridViewTextBoxColumn2.Name = "containerDataGridViewTextBoxColumn2";
-            this.containerDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // quantityDataGridViewTextBoxColumn2
-            // 
-            this.quantityDataGridViewTextBoxColumn2.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn2.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn2.Name = "quantityDataGridViewTextBoxColumn2";
-            this.quantityDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // graded_unitDataSet4
-            // 
-            this.graded_unitDataSet4.DataSetName = "graded_unitDataSet4";
-            this.graded_unitDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salesSoldViewBindingSource
-            // 
-            this.salesSoldViewBindingSource.DataMember = "salesSoldView";
-            this.salesSoldViewBindingSource.DataSource = this.graded_unitDataSet4;
-            // 
-            // salesSoldViewTableAdapter
-            // 
-            this.salesSoldViewTableAdapter.ClearBeforeFill = true;
-            // 
             // drinkDataGridViewTextBoxColumn3
             // 
             this.drinkDataGridViewTextBoxColumn3.DataPropertyName = "Drink";
@@ -1311,84 +1347,49 @@
             this.quantityDataGridViewTextBoxColumn3.Name = "quantityDataGridViewTextBoxColumn3";
             this.quantityDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // tabPage9
+            // salesSoldViewBindingSource
             // 
-            this.tabPage9.Controls.Add(this.dataGridView5);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(749, 486);
-            this.tabPage9.TabIndex = 4;
-            this.tabPage9.Text = "Duty Records";
-            this.tabPage9.UseVisualStyleBackColor = true;
+            this.salesSoldViewBindingSource.DataMember = "salesSoldView";
+            this.salesSoldViewBindingSource.DataSource = this.graded_unitDataSet4;
             // 
-            // dataGridView5
+            // graded_unitDataSet4
             // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.gyleDataGridViewTextBoxColumn2,
-            this.employeeDataGridViewTextBoxColumn,
-            this.startNumberDataGridViewTextBoxColumn,
-            this.endNumberDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.packagingDutyRecordsViewBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(1, 2);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.Size = new System.Drawing.Size(746, 483);
-            this.dataGridView5.TabIndex = 2;
+            this.graded_unitDataSet4.DataSetName = "graded_unitDataSet4";
+            this.graded_unitDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // graded_unitDataSet5
+            // testView
             // 
-            this.graded_unitDataSet5.DataSetName = "graded_unitDataSet5";
-            this.graded_unitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.testView.DataSetName = "testView";
+            this.testView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // packagingDutyRecordsViewBindingSource
+            // testViewBindingSource
             // 
-            this.packagingDutyRecordsViewBindingSource.DataMember = "packagingDutyRecordsView";
-            this.packagingDutyRecordsViewBindingSource.DataSource = this.graded_unitDataSet5;
+            this.testViewBindingSource.DataMember = "testView";
+            this.testViewBindingSource.DataSource = this.testView;
+            // 
+            // testViewTableAdapter
+            // 
+            this.testViewTableAdapter.ClearBeforeFill = true;
+            // 
+            // productionViewTableAdapter
+            // 
+            this.productionViewTableAdapter.ClearBeforeFill = true;
+            // 
+            // packagingViewTableAdapter
+            // 
+            this.packagingViewTableAdapter.ClearBeforeFill = true;
+            // 
+            // salesAvailableViewTableAdapter
+            // 
+            this.salesAvailableViewTableAdapter.ClearBeforeFill = true;
+            // 
+            // salesSoldViewTableAdapter
+            // 
+            this.salesSoldViewTableAdapter.ClearBeforeFill = true;
             // 
             // packagingDutyRecordsViewTableAdapter
             // 
             this.packagingDutyRecordsViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // gyleDataGridViewTextBoxColumn2
-            // 
-            this.gyleDataGridViewTextBoxColumn2.DataPropertyName = "Gyle";
-            this.gyleDataGridViewTextBoxColumn2.HeaderText = "Gyle";
-            this.gyleDataGridViewTextBoxColumn2.Name = "gyleDataGridViewTextBoxColumn2";
-            this.gyleDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // employeeDataGridViewTextBoxColumn
-            // 
-            this.employeeDataGridViewTextBoxColumn.DataPropertyName = "Employee";
-            this.employeeDataGridViewTextBoxColumn.HeaderText = "Employee";
-            this.employeeDataGridViewTextBoxColumn.Name = "employeeDataGridViewTextBoxColumn";
-            this.employeeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // startNumberDataGridViewTextBoxColumn
-            // 
-            this.startNumberDataGridViewTextBoxColumn.DataPropertyName = "Start number";
-            this.startNumberDataGridViewTextBoxColumn.HeaderText = "Start number";
-            this.startNumberDataGridViewTextBoxColumn.Name = "startNumberDataGridViewTextBoxColumn";
-            this.startNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // endNumberDataGridViewTextBoxColumn
-            // 
-            this.endNumberDataGridViewTextBoxColumn.DataPropertyName = "End number";
-            this.endNumberDataGridViewTextBoxColumn.HeaderText = "End number";
-            this.endNumberDataGridViewTextBoxColumn.Name = "endNumberDataGridViewTextBoxColumn";
-            this.endNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Form1
             // 
@@ -1407,6 +1408,8 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet1)).EndInit();
             this.Tab2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1417,6 +1420,12 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packagingViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet2)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.packagingDutyRecordsViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet5)).EndInit();
             this.Sales.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -1424,22 +1433,14 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesAvailableViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet3)).EndInit();
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salesSoldViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagingViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesAvailableViewBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.salesSoldViewBindingSource)).EndInit();
-            this.tabPage9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.graded_unitDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.packagingDutyRecordsViewBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
