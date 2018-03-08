@@ -34,10 +34,5 @@ namespace Inventory_Management_Project
             this.productionViewTableAdapter.Fill(this.graded_unitDataSet1.productionView);
 
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

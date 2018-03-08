@@ -811,6 +811,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(244, 26);
             this.textBoxFirstName.TabIndex = 58;
+            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
             // 
             // EditCustomer
             // 

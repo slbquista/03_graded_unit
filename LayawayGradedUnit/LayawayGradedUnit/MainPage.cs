@@ -474,7 +474,11 @@ namespace LayawayGradedUnit
             textBoxLocationNumber.Text = "";
             textBoxLayawayNo.Text = "";
         }
-        
+
+        private void textBoxFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }//End of class
 
 }//End of namespace

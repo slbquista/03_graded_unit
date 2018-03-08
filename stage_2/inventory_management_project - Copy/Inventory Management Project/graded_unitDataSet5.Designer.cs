@@ -20,17 +20,17 @@ namespace Inventory_Management_Project {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("testView")]
+    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet5")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class testView : global::System.Data.DataSet {
+    public partial class graded_unitDataSet5 : global::System.Data.DataSet {
         
-        private testViewDataTable tabletestView;
+        private packagingDutyRecordsViewDataTable tablepackagingDutyRecordsView;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public testView() {
+        public graded_unitDataSet5() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected testView(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected graded_unitDataSet5(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace Inventory_Management_Project {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["testView"] != null)) {
-                    base.Tables.Add(new testViewDataTable(ds.Tables["testView"]));
+                if ((ds.Tables["packagingDutyRecordsView"] != null)) {
+                    base.Tables.Add(new packagingDutyRecordsViewDataTable(ds.Tables["packagingDutyRecordsView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace Inventory_Management_Project {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public testViewDataTable _testView {
+        public packagingDutyRecordsViewDataTable packagingDutyRecordsView {
             get {
-                return this.tabletestView;
+                return this.tablepackagingDutyRecordsView;
             }
         }
         
@@ -127,7 +127,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            testView cln = ((testView)(base.Clone()));
+            graded_unitDataSet5 cln = ((graded_unitDataSet5)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace Inventory_Management_Project {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["testView"] != null)) {
-                    base.Tables.Add(new testViewDataTable(ds.Tables["testView"]));
+                if ((ds.Tables["packagingDutyRecordsView"] != null)) {
+                    base.Tables.Add(new packagingDutyRecordsViewDataTable(ds.Tables["packagingDutyRecordsView"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletestView = ((testViewDataTable)(base.Tables["testView"]));
+            this.tablepackagingDutyRecordsView = ((packagingDutyRecordsViewDataTable)(base.Tables["packagingDutyRecordsView"]));
             if ((initTable == true)) {
-                if ((this.tabletestView != null)) {
-                    this.tabletestView.InitVars();
+                if ((this.tablepackagingDutyRecordsView != null)) {
+                    this.tablepackagingDutyRecordsView.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "testView";
+            this.DataSetName = "graded_unitDataSet5";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/testView.xsd";
+            this.Namespace = "http://tempuri.org/graded_unitDataSet5.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletestView = new testViewDataTable();
-            base.Tables.Add(this.tabletestView);
+            this.tablepackagingDutyRecordsView = new packagingDutyRecordsViewDataTable();
+            base.Tables.Add(this.tablepackagingDutyRecordsView);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerialize_testView() {
+        private bool ShouldSerializepackagingDutyRecordsView() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            testView ds = new testView();
+            graded_unitDataSet5 ds = new graded_unitDataSet5();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,27 +270,29 @@ namespace Inventory_Management_Project {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void testViewRowChangeEventHandler(object sender, testViewRowChangeEvent e);
+        public delegate void packagingDutyRecordsViewRowChangeEventHandler(object sender, packagingDutyRecordsViewRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class testViewDataTable : global::System.Data.TypedTableBase<testViewRow> {
+        public partial class packagingDutyRecordsViewDataTable : global::System.Data.TypedTableBase<packagingDutyRecordsViewRow> {
             
-            private global::System.Data.DataColumn columngyle;
+            private global::System.Data.DataColumn columnGyle;
             
-            private global::System.Data.DataColumn columnnumber_of_items;
+            private global::System.Data.DataColumn columnEmployee;
             
-            private global::System.Data.DataColumn columnabv;
+            private global::System.Data.DataColumn columnStart_number;
             
-            private global::System.Data.DataColumn columndrink_type;
+            private global::System.Data.DataColumn columnEnd_number;
+            
+            private global::System.Data.DataColumn columnStatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewDataTable() {
-                this.TableName = "testView";
+            public packagingDutyRecordsViewDataTable() {
+                this.TableName = "packagingDutyRecordsView";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +300,7 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal testViewDataTable(global::System.Data.DataTable table) {
+            internal packagingDutyRecordsViewDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,40 +317,48 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected testViewDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected packagingDutyRecordsViewDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn gyleColumn {
+            public global::System.Data.DataColumn GyleColumn {
                 get {
-                    return this.columngyle;
+                    return this.columnGyle;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn number_of_itemsColumn {
+            public global::System.Data.DataColumn EmployeeColumn {
                 get {
-                    return this.columnnumber_of_items;
+                    return this.columnEmployee;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn abvColumn {
+            public global::System.Data.DataColumn Start_numberColumn {
                 get {
-                    return this.columnabv;
+                    return this.columnStart_number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn drink_typeColumn {
+            public global::System.Data.DataColumn End_numberColumn {
                 get {
-                    return this.columndrink_type;
+                    return this.columnEnd_number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StatusColumn {
+                get {
+                    return this.columnStatus;
                 }
             }
             
@@ -363,55 +373,56 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRow this[int index] {
+            public packagingDutyRecordsViewRow this[int index] {
                 get {
-                    return ((testViewRow)(this.Rows[index]));
+                    return ((packagingDutyRecordsViewRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event testViewRowChangeEventHandler testViewRowChanging;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event testViewRowChangeEventHandler testViewRowChanged;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event testViewRowChangeEventHandler testViewRowDeleting;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event testViewRowChangeEventHandler testViewRowDeleted;
+            public event packagingDutyRecordsViewRowChangeEventHandler packagingDutyRecordsViewRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddtestViewRow(testViewRow row) {
+            public void AddpackagingDutyRecordsViewRow(packagingDutyRecordsViewRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRow AddtestViewRow(string gyle, decimal number_of_items, decimal abv, string drink_type) {
-                testViewRow rowtestViewRow = ((testViewRow)(this.NewRow()));
+            public packagingDutyRecordsViewRow AddpackagingDutyRecordsViewRow(string Gyle, string Employee, string Start_number, string End_number, string Status) {
+                packagingDutyRecordsViewRow rowpackagingDutyRecordsViewRow = ((packagingDutyRecordsViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        gyle,
-                        number_of_items,
-                        abv,
-                        drink_type};
-                rowtestViewRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtestViewRow);
-                return rowtestViewRow;
+                        Gyle,
+                        Employee,
+                        Start_number,
+                        End_number,
+                        Status};
+                rowpackagingDutyRecordsViewRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowpackagingDutyRecordsViewRow);
+                return rowpackagingDutyRecordsViewRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRow FindBygyle(string gyle) {
-                return ((testViewRow)(this.Rows.Find(new object[] {
-                            gyle})));
+            public packagingDutyRecordsViewRow FindByGyle(string Gyle) {
+                return ((packagingDutyRecordsViewRow)(this.Rows.Find(new object[] {
+                            Gyle})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                testViewDataTable cln = ((testViewDataTable)(base.Clone()));
+                packagingDutyRecordsViewDataTable cln = ((packagingDutyRecordsViewDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -419,66 +430,71 @@ namespace Inventory_Management_Project {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new testViewDataTable();
+                return new packagingDutyRecordsViewDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columngyle = base.Columns["gyle"];
-                this.columnnumber_of_items = base.Columns["number_of_items"];
-                this.columnabv = base.Columns["abv"];
-                this.columndrink_type = base.Columns["drink_type"];
+                this.columnGyle = base.Columns["Gyle"];
+                this.columnEmployee = base.Columns["Employee"];
+                this.columnStart_number = base.Columns["Start number"];
+                this.columnEnd_number = base.Columns["End number"];
+                this.columnStatus = base.Columns["Status"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columngyle = new global::System.Data.DataColumn("gyle", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngyle);
-                this.columnnumber_of_items = new global::System.Data.DataColumn("number_of_items", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnumber_of_items);
-                this.columnabv = new global::System.Data.DataColumn("abv", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnabv);
-                this.columndrink_type = new global::System.Data.DataColumn("drink_type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndrink_type);
+                this.columnGyle = new global::System.Data.DataColumn("Gyle", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGyle);
+                this.columnEmployee = new global::System.Data.DataColumn("Employee", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmployee);
+                this.columnStart_number = new global::System.Data.DataColumn("Start number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStart_number);
+                this.columnEnd_number = new global::System.Data.DataColumn("End number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEnd_number);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columngyle}, true));
-                this.columngyle.AllowDBNull = false;
-                this.columngyle.Unique = true;
-                this.columngyle.MaxLength = 10;
-                this.columnnumber_of_items.AllowDBNull = false;
-                this.columnabv.AllowDBNull = false;
-                this.columndrink_type.AllowDBNull = false;
-                this.columndrink_type.MaxLength = 20;
-                this.ExtendedProperties.Add("Generator_TablePropName", "_testView");
-                this.ExtendedProperties.Add("Generator_UserTableName", "testView");
+                                this.columnGyle}, true));
+                this.columnGyle.AllowDBNull = false;
+                this.columnGyle.Unique = true;
+                this.columnGyle.MaxLength = 10;
+                this.columnEmployee.ReadOnly = true;
+                this.columnEmployee.MaxLength = 100;
+                this.columnStart_number.AllowDBNull = false;
+                this.columnStart_number.MaxLength = 15;
+                this.columnEnd_number.AllowDBNull = false;
+                this.columnEnd_number.MaxLength = 15;
+                this.columnStatus.AllowDBNull = false;
+                this.columnStatus.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRow NewtestViewRow() {
-                return ((testViewRow)(this.NewRow()));
+            public packagingDutyRecordsViewRow NewpackagingDutyRecordsViewRow() {
+                return ((packagingDutyRecordsViewRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new testViewRow(builder);
+                return new packagingDutyRecordsViewRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(testViewRow);
+                return typeof(packagingDutyRecordsViewRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.testViewRowChanged != null)) {
-                    this.testViewRowChanged(this, new testViewRowChangeEvent(((testViewRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowChanged != null)) {
+                    this.packagingDutyRecordsViewRowChanged(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -486,8 +502,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.testViewRowChanging != null)) {
-                    this.testViewRowChanging(this, new testViewRowChangeEvent(((testViewRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowChanging != null)) {
+                    this.packagingDutyRecordsViewRowChanging(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -495,8 +511,8 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.testViewRowDeleted != null)) {
-                    this.testViewRowDeleted(this, new testViewRowChangeEvent(((testViewRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowDeleted != null)) {
+                    this.packagingDutyRecordsViewRowDeleted(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
@@ -504,14 +520,14 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.testViewRowDeleting != null)) {
-                    this.testViewRowDeleting(this, new testViewRowChangeEvent(((testViewRow)(e.Row)), e.Action));
+                if ((this.packagingDutyRecordsViewRowDeleting != null)) {
+                    this.packagingDutyRecordsViewRowDeleting(this, new packagingDutyRecordsViewRowChangeEvent(((packagingDutyRecordsViewRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemovetestViewRow(testViewRow row) {
+            public void RemovepackagingDutyRecordsViewRow(packagingDutyRecordsViewRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -520,7 +536,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                testView ds = new testView();
+                graded_unitDataSet5 ds = new graded_unitDataSet5();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -538,7 +554,7 @@ namespace Inventory_Management_Project {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "testViewDataTable";
+                attribute2.FixedValue = "packagingDutyRecordsViewDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -582,59 +598,87 @@ namespace Inventory_Management_Project {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class testViewRow : global::System.Data.DataRow {
+        public partial class packagingDutyRecordsViewRow : global::System.Data.DataRow {
             
-            private testViewDataTable tabletestView;
+            private packagingDutyRecordsViewDataTable tablepackagingDutyRecordsView;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal testViewRow(global::System.Data.DataRowBuilder rb) : 
+            internal packagingDutyRecordsViewRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletestView = ((testViewDataTable)(this.Table));
+                this.tablepackagingDutyRecordsView = ((packagingDutyRecordsViewDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string gyle {
+            public string Gyle {
                 get {
-                    return ((string)(this[this.tabletestView.gyleColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.GyleColumn]));
                 }
                 set {
-                    this[this.tabletestView.gyleColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal number_of_items {
-                get {
-                    return ((decimal)(this[this.tabletestView.number_of_itemsColumn]));
-                }
-                set {
-                    this[this.tabletestView.number_of_itemsColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.GyleColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal abv {
+            public string Employee {
                 get {
-                    return ((decimal)(this[this.tabletestView.abvColumn]));
+                    try {
+                        return ((string)(this[this.tablepackagingDutyRecordsView.EmployeeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Employee\' in table \'packagingDutyRecordsView\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tabletestView.abvColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.EmployeeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string drink_type {
+            public string Start_number {
                 get {
-                    return ((string)(this[this.tabletestView.drink_typeColumn]));
+                    return ((string)(this[this.tablepackagingDutyRecordsView.Start_numberColumn]));
                 }
                 set {
-                    this[this.tabletestView.drink_typeColumn] = value;
+                    this[this.tablepackagingDutyRecordsView.Start_numberColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string End_number {
+                get {
+                    return ((string)(this[this.tablepackagingDutyRecordsView.End_numberColumn]));
+                }
+                set {
+                    this[this.tablepackagingDutyRecordsView.End_numberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Status {
+                get {
+                    return ((string)(this[this.tablepackagingDutyRecordsView.StatusColumn]));
+                }
+                set {
+                    this[this.tablepackagingDutyRecordsView.StatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmployeeNull() {
+                return this.IsNull(this.tablepackagingDutyRecordsView.EmployeeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmployeeNull() {
+                this[this.tablepackagingDutyRecordsView.EmployeeColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -642,22 +686,22 @@ namespace Inventory_Management_Project {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class testViewRowChangeEvent : global::System.EventArgs {
+        public class packagingDutyRecordsViewRowChangeEvent : global::System.EventArgs {
             
-            private testViewRow eventRow;
+            private packagingDutyRecordsViewRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRowChangeEvent(testViewRow row, global::System.Data.DataRowAction action) {
+            public packagingDutyRecordsViewRowChangeEvent(packagingDutyRecordsViewRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public testViewRow Row {
+            public packagingDutyRecordsViewRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -673,7 +717,7 @@ namespace Inventory_Management_Project {
         }
     }
 }
-namespace Inventory_Management_Project.testViewTableAdapters {
+namespace Inventory_Management_Project.graded_unitDataSet5TableAdapters {
     
     
     /// <summary>
@@ -685,7 +729,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class testViewTableAdapter : global::System.ComponentModel.Component {
+    public partial class packagingDutyRecordsViewTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -699,7 +743,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public testViewTableAdapter() {
+        public packagingDutyRecordsViewTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -796,11 +840,12 @@ namespace Inventory_Management_Project.testViewTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "testView";
-            tableMapping.ColumnMappings.Add("gyle", "gyle");
-            tableMapping.ColumnMappings.Add("number_of_items", "number_of_items");
-            tableMapping.ColumnMappings.Add("abv", "abv");
-            tableMapping.ColumnMappings.Add("drink_type", "drink_type");
+            tableMapping.DataSetTable = "packagingDutyRecordsView";
+            tableMapping.ColumnMappings.Add("Gyle", "Gyle");
+            tableMapping.ColumnMappings.Add("Employee", "Employee");
+            tableMapping.ColumnMappings.Add("Start number", "Start number");
+            tableMapping.ColumnMappings.Add("End number", "End number");
+            tableMapping.ColumnMappings.Add("Status", "Status");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -817,7 +862,8 @@ namespace Inventory_Management_Project.testViewTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT gyle, number_of_items, abv, drink_type FROM dbo.testView";
+            this._commandCollection[0].CommandText = "SELECT Gyle, Employee, [Start number], [End number], Status FROM dbo.packagingDut" +
+                "yRecordsView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -825,7 +871,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(testView.testViewDataTable dataTable) {
+        public virtual int Fill(graded_unitDataSet5.packagingDutyRecordsViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -838,9 +884,9 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual testView.testViewDataTable GetData() {
+        public virtual graded_unitDataSet5.packagingDutyRecordsViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            testView.testViewDataTable dataTable = new testView.testViewDataTable();
+            graded_unitDataSet5.packagingDutyRecordsViewDataTable dataTable = new graded_unitDataSet5.packagingDutyRecordsViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -914,7 +960,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(testView dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -924,7 +970,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(testView dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -934,7 +980,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(testView dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(graded_unitDataSet5 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -968,7 +1014,7 @@ namespace Inventory_Management_Project.testViewTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(testView dataSet) {
+        public virtual int UpdateAll(graded_unitDataSet5 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
