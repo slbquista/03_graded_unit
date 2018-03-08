@@ -19,18 +19,19 @@ namespace Inventory_Management_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'graded_unitDataSet5.packagingDutyRecordsView' table. You can move, or remove it, as needed.
+            //Connection string - note change the drive letter depending on the letter of the USB!
+            //Unsure where the connection string settup for the DataSets created using Visual Studio is stored in code form, but it can be changed via "Project > Project Properties > Settings"
+            System.Data.SqlClient.SqlConnection Connect = new SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="E:\SQL Database\graded_unit.mdf";Integrated Security=True;Connect Timeout=30");
+            DataTable dt = new DataTable();
+            System.Data.SqlClient.SqlCommand insert = new System.Data.SqlClient.SqlCommand();
+
+            //DataSets created to read data from the database into DataGridViews
+            this.gu_batchTableAdapter.Fill(this.graded_unitDataSet6.gu_batch);
             this.packagingDutyRecordsViewTableAdapter.Fill(this.graded_unitDataSet5.packagingDutyRecordsView);
-            // TODO: This line of code loads data into the 'graded_unitDataSet4.salesSoldView' table. You can move, or remove it, as needed.
             this.salesSoldViewTableAdapter.Fill(this.graded_unitDataSet4.salesSoldView);
-            // TODO: This line of code loads data into the 'graded_unitDataSet3.salesAvailableView' table. You can move, or remove it, as needed.
             this.salesAvailableViewTableAdapter.Fill(this.graded_unitDataSet3.salesAvailableView);
-            // TODO: This line of code loads data into the 'graded_unitDataSet2.packagingView' table. You can move, or remove it, as needed.
             this.packagingViewTableAdapter.Fill(this.graded_unitDataSet2.packagingView);
-            // TODO: This line of code loads data into the 'graded_unitDataSet1.productionView' table. You can move, or remove it, as needed.
             this.productionViewTableAdapter.Fill(this.graded_unitDataSet1.productionView);
-            // TODO: This line of code loads data into the 'testView._testView' table. You can move, or remove it, as needed.
-            this.testViewTableAdapter.Fill(this.testView._testView);
 
         }
     }
