@@ -71,6 +71,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LayawayDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LayawayDBDataSet2.cs">
+      <DependentUpon>LayawayDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LayawayDBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
