@@ -1,13 +1,10 @@
-Write SQL statements for each submit action - taking the user input from text boxes then entering it into the relevant tables.
-This should include add, remove, update!
+The DB connection string is stored for the data sets settup through VisualStudio UI.
+---> Properties > Settings.settings > Settings.Designer.cs > Settings
 
-Ask Ed where the DB connection string is stored for the data sets settup through VisualStudio UI.
-
-Settup manually coded DB connection to use for writing to the DB.
 Should this be how data is written from the database or not? Does this matter?
-
-Check with Ed if once this is done, will it be enough to meet requirements or do I need to do more?
 
 Redo datasets with proper descriptive names.
 
 Rename elements of Form1 to be proper and descriptive.
+
+Finish hooking up user input forms to the database.

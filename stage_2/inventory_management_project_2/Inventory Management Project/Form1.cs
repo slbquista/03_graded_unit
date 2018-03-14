@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,9 +22,9 @@ namespace Inventory_Management_Project
             //Connection string - note change the drive letter depending on the letter of the USB!
             //Unsure where the connection string settup for the DataSets created using Visual Studio is stored in code form, but it can be changed via "Project > Project Properties > Settings"
 
-            //SqlConnection con = new SqlConnection("Data Source=(LocalDB)/MSSQLLocalDB;AttachDbFilename=F:/SQL Database/graded_unit.mdf;Integrated Security=True;Connect Timeout=30");
-            //DataTable dt = new DataTable();
-            //SqlCommand insert = new System.Data.SqlClient.SqlCommand();
+            System.Data.SqlClient.SqlConnection Connect = new SqlConnection("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="E:\SQL Database\graded_unit.mdf";Integrated Security=True;Connect Timeout=30");
+            DataTable dt = new DataTable();
+            .Data.SqlClient.SqlCommand insert = new System.Data.SqlClient.SqlCommand();
 
             //DataSets created to read data from the database into DataGridViews
             this.gu_batchTableAdapter.Fill(this.graded_unitDataSet6.gu_batch);
@@ -44,56 +43,6 @@ namespace Inventory_Management_Project
             updateDate.CustomFormat = "yyyy MMM dd";
         }
 
-		//Button to insert input from the Production > Insert tab
-		private void submitRecordsInsert_Click(object sender, EventArgs e)
-		{
-			insertRecords(insertNumberContainers.Text);
-		}
 
-		private void insertRecords (String location)
-		{
-			SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
-
-			try
-			{
-				con.Open();
-			}
-			catch (Exception err)
-			{
-				MessageBox.Show(err.Message);
-			}
-
-			string sql = "INSERT INTO gu_batch (drink_id, gyle, container_id, number_of_items, storage_location) VALUES (2, 'ier', 1, 1, @storage_location); ";
-			using (var cmd = new SqlCommand(sql, con))
-			{
-				//This lets you put values in without directly adding them. 
-				//cmd.Parameters.AddWithValue("@fName", fName);
-				//cmd.Parameters.AddWithValue("@lName", lName);
-				//cmd.Parameters.AddWithValue("@password", password);
-				cmd.Parameters.AddWithValue("@storage_location", location);
-
-				try
-				{
-					cmd.ExecuteNonQuery();
-					MessageBox.Show("The user was Added Successfully");
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
-
-				try
-				{
-					con.Close();
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
-
-			}
-		}
-
-
-	}
+    }
 }

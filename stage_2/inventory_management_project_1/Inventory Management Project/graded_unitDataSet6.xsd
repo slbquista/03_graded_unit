@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="graded_unitDataSet6" targetNamespace="http://tempuri.org/graded_unitDataSet6.xsd" xmlns:mstns="http://tempuri.org/graded_unitDataSet6.xsd" xmlns="http://tempuri.org/graded_unitDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="graded_unitConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="graded_unitConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Inventory_Management_Project.Properties.Settings.GlobalReference.Default.graded_unitConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gu_batchTableAdapter" GeneratorDataComponentClassName="gu_batchTableAdapter" Name="gu_batch" UserDataComponentName="gu_batchTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString1 (Settings)" DbObjectName="dbo.gu_batch" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT drink_id FROM dbo.gu_batch</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="drink_id" DataSetColumn="drink_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="graded_unitDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="graded_unitDataSet6" msprop:Generator_UserDSName="graded_unitDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="gu_batch" msprop:Generator_TableClassName="gu_batchDataTable" msprop:Generator_TableVarName="tablegu_batch" msprop:Generator_TablePropName="gu_batch" msprop:Generator_RowDeletingName="gu_batchRowDeleting" msprop:Generator_RowChangingName="gu_batchRowChanging" msprop:Generator_RowEvHandlerName="gu_batchRowChangeEventHandler" msprop:Generator_RowDeletedName="gu_batchRowDeleted" msprop:Generator_UserTableName="gu_batch" msprop:Generator_RowChangedName="gu_batchRowChanged" msprop:Generator_RowEvArgName="gu_batchRowChangeEvent" msprop:Generator_RowClassName="gu_batchRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="drink_id" msprop:Generator_ColumnVarNameInTable="columndrink_id" msprop:Generator_ColumnPropNameInRow="drink_id" msprop:Generator_ColumnPropNameInTable="drink_idColumn" msprop:Generator_UserColumnName="drink_id" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
