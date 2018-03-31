@@ -1,0 +1,2 @@
+Reset the fields on submit.
+Confirmation message on delete.
