@@ -26,9 +26,7 @@ namespace Inventory_Management_Project.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-
-        //The following line of code contains the path to the SQL database. Change drive letter here!
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"F:\\SQL Database\\graded_unit." +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\SQL Database\\graded_unit." +
             "mdf\";Integrated Security=True;Connect Timeout=30")]
         public string graded_unitConnectionString {
             get {

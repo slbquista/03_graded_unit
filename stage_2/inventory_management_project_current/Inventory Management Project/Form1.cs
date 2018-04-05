@@ -10,12 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //Change connection string drive letter in Properties > Settings.settings > Settings.Designer.cs
+//If this does work then change in Project Properties > Settings
+//Also change connection method dbConnect and dbDisconnect
+
 
 namespace Inventory_Management_Project
 {
 	public partial class Form1 : Form
 	{
-		public Form1()
+        //Defining the connection string to be used throughout the program
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
+
+        public Form1()
 		{
 			InitializeComponent();
 		}
@@ -25,6 +31,7 @@ namespace Inventory_Management_Project
 			loadData();
 		}
 
+        //Loads data into ComboBoxes and Views
 		public void loadData()
 		{
 			//This code loads the data into the ComboBoxes
@@ -45,6 +52,40 @@ namespace Inventory_Management_Project
 			this.salesAvailableViewTableAdapter.Fill(this.gu_views3.salesAvailableView);
 			this.salesAvailableViewTableAdapter.Fill(this.gu_views2.salesAvailableView);
 		}
+
+        //Connect to database
+        public void dbConnect()
+        {
+            //Connection string
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
+
+            //Test the connection open
+            try
+            {
+                con.Open();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        //Disconnect from database
+        public void dbDisconnect()
+        {
+            //Connection string
+            //SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
+
+            //Test connection close
+            try
+            {
+                con.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
 
 		//Updates the updateDate picker to use correct date format for the date datatype in SQL
 		public void SetMyCustomFormat()
@@ -70,7 +111,7 @@ namespace Inventory_Management_Project
 			//Check text has been entered
 			if (String.IsNullOrEmpty(insertGyle.Text))
 			{
-				MessageBox.Show("Please enter the gyle");
+				MessageBox.Show("Please enter a gyle");
 				return;
 			}
 			else
@@ -84,7 +125,7 @@ namespace Inventory_Management_Project
 			//Check only integers have been entered
 			if (!Int32.TryParse(insertNumberContainers.Text, out quantityConverter))
 			{
-				MessageBox.Show("Please enter an integer");
+				MessageBox.Show("Please enter an integer number of containers");
 				return;
 			}
 
@@ -94,25 +135,17 @@ namespace Inventory_Management_Project
 			//Pass the parsed values into the insert method
 			productionInsertRecords(alcoholConverter, gyleCheck, containerConverter, quantityConverter, locationConverter);
 
-			//Reloads data into relevant fields
+			//Reloads data into relevant fields and resets textBoxes
 			loadData();
-		}
+            insertGyle.Text = "";
+            insertNumberContainers.Text = "";
+
+        }
 
 		//Insertion code for Production > Insert
 		private void productionInsertRecords(int drink_id, String gyle, int container_id, int number_of_items, int location_id)
 		{
-			//Connection string
-			SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
-
-			//Test the connection open
-			try
-			{
-				con.Open();
-			}
-			catch (Exception err)
-			{
-				MessageBox.Show(err.Message);
-			}
+            dbConnect();
 
 			//Insert records
 			string sql = "INSERT INTO gu_batch (drink_id, gyle, container_id, number_of_items, location_id) VALUES (@drink_id, @gyle, @container_id, @number_of_items, @location_id); ";
@@ -132,29 +165,30 @@ namespace Inventory_Management_Project
 				}
 				catch (Exception err)
 				{
-					MessageBox.Show(err.Message);
-				}
+					MessageBox.Show(err.Message + "\n\nTry entering a new gyle.");
+ 				}
 
-				//Test connection close
-				try
-				{
-					con.Close();
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
-
+                dbDisconnect();
 			}
 		}
 
 		//Button onclick for Packaging > Bottle
 		private void submitRecordsBottle_Click(object sender, EventArgs e)
 		{
-			//Variable to check insertion or convert datatype
+            //Variable to check insertion or convert datatype
+            String gyleCheck = "";
 			int containerConverter;
 			int quantityConverter;
 			int locationConverter;
+
+            //Check if there is a record selected in the dropdown
+            if (selectGyleBottle.Text == "")
+            {
+                MessageBox.Show("Please select a gyle from the list. \nIf no options appear, check stock levels.");
+            } else
+            {
+                gyleCheck = selectGyleBottle.Text;
+            }
 
 			//Converting datatypes
 			Int32.TryParse(updateContainer.SelectedValue.ToString(), out containerConverter);
@@ -162,7 +196,7 @@ namespace Inventory_Management_Project
 			//Check only integers have been entered
 			if (!Int32.TryParse(updateNumberContainers.Text, out quantityConverter))
 			{
-				MessageBox.Show("Please enter an integer");
+				MessageBox.Show("Please enter an integer number of items");
 				return;
 			}
 
@@ -170,27 +204,18 @@ namespace Inventory_Management_Project
 			Int32.TryParse(updateLocationBottle.SelectedValue.ToString(), out locationConverter);
 
 			//Pass the parsed values into the update method
-			packagingBottlingRecords(selectGyleBottle.Text, containerConverter, quantityConverter, updateDate.Text, locationConverter);
+			packagingBottlingRecords(gyleCheck, containerConverter, quantityConverter, updateDate.Text, locationConverter);
 
-			//Reloads data into relevant fields
-			loadData();
-		}
+            //Reloads data into relevant fields and resets textBoxes
+            loadData();
+            updateNumberContainers.Text = "";
+
+        }
 
 		//Update code for Packaging > Bottle
 		private void packagingBottlingRecords(String gyle, int container_id, int number_of_items, String date_filled, int location_id)
 		{
-			//Connection string
-			SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
-
-			//Test the connection open
-			try
-			{
-				con.Open();
-			}
-			catch (Exception err)
-			{
-				MessageBox.Show(err.Message);
-			}
+            dbConnect();
 
 			//Insert records
 			//string sql = "INSERT INTO gu_batch (gyle, container_id, number_of_items, date_filled, location_id) VALUES (@gyle, @container_id, @number_of_items, @date_filled, @location_id); ";
@@ -211,18 +236,10 @@ namespace Inventory_Management_Project
 				}
 				catch (Exception err)
 				{
-					MessageBox.Show(err.Message);
-				}
+                    MessageBox.Show(err.Message);
+                }
 
-				//Test connection close
-				try
-				{
-					con.Close();
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
+                dbDisconnect();
 
 			}
 		}
@@ -230,14 +247,25 @@ namespace Inventory_Management_Project
 		//Button onclick for Packaging > Label
 		private void submitRecordsLabel_Click(object sender, EventArgs e)
 		{
-			//Variable to check insertion or convert datatype
+            //Variable to check insertion or convert datatype
+            String gyleCheck = "";
 			int staffIDConverter;
 			int locationConverter;
 			String dutyStartNumberCheck;
 			String dutyEndNumberCheck;
 
-			//Converting datatypes
-			Int32.TryParse(setStaffID.SelectedValue.ToString(), out staffIDConverter);
+            //Check if there is a record selected in the dropdown
+            if (selectGyleLabel.Text == "")
+            {
+                MessageBox.Show("Please select a gyle from the list. \nIf no options appear, check stock levels.");
+            }
+            else
+            {
+                gyleCheck = selectGyleLabel.Text;
+            }
+
+            //Converting datatypes
+            Int32.TryParse(setStaffID.SelectedValue.ToString(), out staffIDConverter);
 
 			//Check text has been entered
 			if (String.IsNullOrEmpty(setStartNumber.Text))
@@ -265,27 +293,19 @@ namespace Inventory_Management_Project
 			Int32.TryParse(updateLocationLabel.SelectedValue.ToString(), out locationConverter);
 
 			//Pass the parsed values into the update method
-			packagingLabelingRecords(selectGyleLabel.Text, staffIDConverter, dutyStartNumberCheck, dutyEndNumberCheck, setDutyStatus.Text, locationConverter);
+			packagingLabelingRecords(gyleCheck, staffIDConverter, dutyStartNumberCheck, dutyEndNumberCheck, setDutyStatus.Text, locationConverter);
 
-			//Reloads data into relevant fields
-			loadData();
-		}
+            //Reloads data into relevant fields and resets textBoxes
+            loadData();
+            setStartNumber.Text = "";
+            setEndNumber.Text = "";
+
+        }
 
 		//Insertion code for Packaging > Label
 		private void packagingLabelingRecords(String gyle, int staff_id, String stamp_start_number, String stamp_end_number, String duty_status, int location_id)
 		{
-			//Connection string
-			SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
-
-			//Test the connection open
-			try
-			{
-				con.Open();
-			}
-			catch (Exception err)
-			{
-				MessageBox.Show(err.Message);
-			}
+            dbConnect();
 
 			//Insert records
 			string sql = "INSERT INTO gu_duty (gyle, staff_id, stamp_start_number, stamp_end_number, duty_status) VALUES (@gyle, @staff_id, @stamp_start_number, @stamp_end_number, @duty_status); UPDATE gu_batch SET packaged = 'Y', location_id = @location_id WHERE gyle = @gyle; ";
@@ -311,15 +331,7 @@ namespace Inventory_Management_Project
 					MessageBox.Show(err.Message);
 				}
 
-				//Test connection close
-				try
-				{
-					con.Close();
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
+                dbDisconnect();
 
 			}
 		}
@@ -327,8 +339,24 @@ namespace Inventory_Management_Project
 		//Button onclick for Sales > Sell
 		private void deleteRecords_Click(object sender, EventArgs e)
 		{
-			//Pass the parsed values into the update method
-			salesSellRecords(selectGyleSell.Text);
+            //Variable to check insertion or convert datatype
+            String gyleCheck = "";
+
+            //Check if there is a record selected in the dropdown
+            if (selectGyleSell.Text == "")
+            {
+                MessageBox.Show("Please select a gyle from the list. \nIf no options appear, check stock levels.");
+            }
+            else
+            {
+                gyleCheck = selectGyleSell.Text;
+
+                if (MessageBox.Show("Are you sure you want to delete these records?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    //Pass the parsed values into the update method
+                    salesSellRecords(gyleCheck);
+                }
+            }
 
 			//Reloads data into relevant fields
 			loadData();
@@ -337,18 +365,7 @@ namespace Inventory_Management_Project
 		//Removal code for Sales > Sell
 		private void salesSellRecords (String gyle)
 		{
-			//Connection string
-			SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
-
-			//Test the connection open
-			try
-			{
-				con.Open();
-			}
-			catch (Exception err)
-			{
-				MessageBox.Show(err.Message);
-			}
+            dbConnect();
 
 			//Insert records
 			string sql = "DELETE FROM gu_batch WHERE gyle = @gyle; ";
@@ -369,15 +386,7 @@ namespace Inventory_Management_Project
 					MessageBox.Show(err.Message);
 				}
 
-				//Test connection close
-				try
-				{
-					con.Close();
-				}
-				catch (Exception err)
-				{
-					MessageBox.Show(err.Message);
-				}
+                dbDisconnect();
 			}
 		}
 	}
