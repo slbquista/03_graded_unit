@@ -1,2 +1,23 @@
-Reset the fields on submit.
-Confirmation message on delete.
+Implement or at least note down the required features stated in the planning phase.
+Whiskey was ommited as a product simply because it wasn't necessary to implement, as the concept of the system was demonstrated well enough with the two main product types - gin and beer.
+Other than that, the functional requirements were met.
+For future improvements, tracking the stock levels of bottles, labels etc would be useful as well as following the products outside the warehouse enviroment - instead of deleting the reckord when they are taken to sell.
+
+Implement the UI with HCI designes stated in planning phase.
+The UI implementation was very close to the design that was laid out in the planning phase.
+There are some visual differences due to the tools available in Visual Studio but the functionality should be near identical.
+The site map was altered somewhat as improvements were found during implementation that had not come to mind during planning.
+
+Reference the sources used for learning about unfamiliar libraries and constructs.
+https://www.codeproject.com/Articles/823854/How-to-connect-SQL-Database-to-your-Csharp-program --- How to read/write data from database
+https://stackoverflow.com/questions/1019793/how-can-i-convert-string-to-int --- How to convert string to int
+https://stackoverflow.com/questions/2460754/how-to-check-whether-the-item-in-the-combo-box-is-selected-or-not-in-c --- Checking if the user has selected or typed an option
+There were of course other things but I didn't keep track of every search.
+There was also a lot of new things that were introduced to me by using Visual Studio and using the design features of the program which let me populate ComboBoxes and DataGridViews with data from the database
+Linked to the above comment, a lot of the features offered by VS were unfamiliar, such as how to implement tabs, date picker, tables and datagridviews
+
+Need to create test plan
+
+Run tests
+
+User documentation / User guide
