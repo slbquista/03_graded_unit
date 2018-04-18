@@ -18,6 +18,4 @@ Linked to the above comment, a lot of the features offered by VS were unfamiliar
 
 Need to create test plan
 
-Run tests
-
-User documentation / User guide
+Run and document tests

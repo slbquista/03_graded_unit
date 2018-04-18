@@ -20,9 +20,9 @@ namespace Inventory_Management_Project {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("graded_unitDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("gu_tables")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class graded_unitDataSet : global::System.Data.DataSet {
+    public partial class gu_tables : global::System.Data.DataSet {
         
         private gu_alcaholDataTable tablegu_alcahol;
         
@@ -30,11 +30,15 @@ namespace Inventory_Management_Project {
         
         private gu_dutyDataTable tablegu_duty;
         
+        private gu_locationDataTable tablegu_location;
+        
         private gu_staffDataTable tablegu_staff;
         
         private gu_storageDataTable tablegu_storage;
         
         private global::System.Data.DataRelation relationFK_gu_batch_gu_alcahol;
+        
+        private global::System.Data.DataRelation relationFK_gu_batch_gu_location;
         
         private global::System.Data.DataRelation relationFK_gu_batch_gu_storage;
         
@@ -44,7 +48,7 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public graded_unitDataSet() {
+        public gu_tables() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -55,7 +59,7 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected graded_unitDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected gu_tables(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -76,6 +80,9 @@ namespace Inventory_Management_Project {
                 }
                 if ((ds.Tables["gu_duty"] != null)) {
                     base.Tables.Add(new gu_dutyDataTable(ds.Tables["gu_duty"]));
+                }
+                if ((ds.Tables["gu_location"] != null)) {
+                    base.Tables.Add(new gu_locationDataTable(ds.Tables["gu_location"]));
                 }
                 if ((ds.Tables["gu_staff"] != null)) {
                     base.Tables.Add(new gu_staffDataTable(ds.Tables["gu_staff"]));
@@ -128,6 +135,16 @@ namespace Inventory_Management_Project {
         public gu_dutyDataTable gu_duty {
             get {
                 return this.tablegu_duty;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public gu_locationDataTable gu_location {
+            get {
+                return this.tablegu_location;
             }
         }
         
@@ -193,7 +210,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            graded_unitDataSet cln = ((graded_unitDataSet)(base.Clone()));
+            gu_tables cln = ((gu_tables)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -226,6 +243,9 @@ namespace Inventory_Management_Project {
                 }
                 if ((ds.Tables["gu_duty"] != null)) {
                     base.Tables.Add(new gu_dutyDataTable(ds.Tables["gu_duty"]));
+                }
+                if ((ds.Tables["gu_location"] != null)) {
+                    base.Tables.Add(new gu_locationDataTable(ds.Tables["gu_location"]));
                 }
                 if ((ds.Tables["gu_staff"] != null)) {
                     base.Tables.Add(new gu_staffDataTable(ds.Tables["gu_staff"]));
@@ -284,6 +304,12 @@ namespace Inventory_Management_Project {
                     this.tablegu_duty.InitVars();
                 }
             }
+            this.tablegu_location = ((gu_locationDataTable)(base.Tables["gu_location"]));
+            if ((initTable == true)) {
+                if ((this.tablegu_location != null)) {
+                    this.tablegu_location.InitVars();
+                }
+            }
             this.tablegu_staff = ((gu_staffDataTable)(base.Tables["gu_staff"]));
             if ((initTable == true)) {
                 if ((this.tablegu_staff != null)) {
@@ -297,6 +323,7 @@ namespace Inventory_Management_Project {
                 }
             }
             this.relationFK_gu_batch_gu_alcahol = this.Relations["FK_gu_batch_gu_alcahol"];
+            this.relationFK_gu_batch_gu_location = this.Relations["FK_gu_batch_gu_location"];
             this.relationFK_gu_batch_gu_storage = this.Relations["FK_gu_batch_gu_storage"];
             this.relationFK_gu_duty_gu_staff = this.Relations["FK_gu_duty_gu_staff"];
         }
@@ -304,9 +331,9 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "graded_unitDataSet";
+            this.DataSetName = "gu_tables";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/graded_unitDataSet.xsd";
+            this.Namespace = "http://tempuri.org/gu_tables.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablegu_alcahol = new gu_alcaholDataTable();
@@ -315,6 +342,8 @@ namespace Inventory_Management_Project {
             base.Tables.Add(this.tablegu_batch);
             this.tablegu_duty = new gu_dutyDataTable();
             base.Tables.Add(this.tablegu_duty);
+            this.tablegu_location = new gu_locationDataTable();
+            base.Tables.Add(this.tablegu_location);
             this.tablegu_staff = new gu_staffDataTable();
             base.Tables.Add(this.tablegu_staff);
             this.tablegu_storage = new gu_storageDataTable();
@@ -323,6 +352,10 @@ namespace Inventory_Management_Project {
                         this.tablegu_alcahol.drink_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablegu_batch.drink_idColumn}, false);
             this.Relations.Add(this.relationFK_gu_batch_gu_alcahol);
+            this.relationFK_gu_batch_gu_location = new global::System.Data.DataRelation("FK_gu_batch_gu_location", new global::System.Data.DataColumn[] {
+                        this.tablegu_location.location_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablegu_batch.location_idColumn}, false);
+            this.Relations.Add(this.relationFK_gu_batch_gu_location);
             this.relationFK_gu_batch_gu_storage = new global::System.Data.DataRelation("FK_gu_batch_gu_storage", new global::System.Data.DataColumn[] {
                         this.tablegu_storage.container_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablegu_batch.container_idColumn}, false);
@@ -353,6 +386,12 @@ namespace Inventory_Management_Project {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializegu_location() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializegu_staff() {
             return false;
         }
@@ -374,7 +413,7 @@ namespace Inventory_Management_Project {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            graded_unitDataSet ds = new graded_unitDataSet();
+            gu_tables ds = new gu_tables();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -426,6 +465,9 @@ namespace Inventory_Management_Project {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void gu_dutyRowChangeEventHandler(object sender, gu_dutyRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void gu_locationRowChangeEventHandler(object sender, gu_locationRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void gu_staffRowChangeEventHandler(object sender, gu_staffRowChangeEvent e);
@@ -663,7 +705,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                gu_tables ds = new gu_tables();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -735,7 +777,7 @@ namespace Inventory_Management_Project {
             
             private global::System.Data.DataColumn columnnumber_of_items;
             
-            private global::System.Data.DataColumn columnstorage_location;
+            private global::System.Data.DataColumn columnlocation_id;
             
             private global::System.Data.DataColumn columnfilled;
             
@@ -804,9 +846,9 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn storage_locationColumn {
+            public global::System.Data.DataColumn location_idColumn {
                 get {
-                    return this.columnstorage_location;
+                    return this.columnlocation_id;
                 }
             }
             
@@ -879,19 +921,22 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gu_batchRow Addgu_batchRow(string gyle, gu_storageRow parentgu_storageRowByFK_gu_batch_gu_storage, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, gu_alcaholRow parentgu_alcaholRowByFK_gu_batch_gu_alcahol) {
+            public gu_batchRow Addgu_batchRow(string gyle, gu_storageRow parentgu_storageRowByFK_gu_batch_gu_storage, decimal number_of_items, gu_locationRow parentgu_locationRowByFK_gu_batch_gu_location, string filled, System.DateTime date_filled, string packaged, gu_alcaholRow parentgu_alcaholRowByFK_gu_batch_gu_alcahol) {
                 gu_batchRow rowgu_batchRow = ((gu_batchRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         gyle,
                         null,
                         number_of_items,
-                        storage_location,
+                        null,
                         filled,
                         date_filled,
                         packaged,
                         null};
                 if ((parentgu_storageRowByFK_gu_batch_gu_storage != null)) {
                     columnValuesArray[1] = parentgu_storageRowByFK_gu_batch_gu_storage[0];
+                }
+                if ((parentgu_locationRowByFK_gu_batch_gu_location != null)) {
+                    columnValuesArray[3] = parentgu_locationRowByFK_gu_batch_gu_location[0];
                 }
                 if ((parentgu_alcaholRowByFK_gu_batch_gu_alcahol != null)) {
                     columnValuesArray[7] = parentgu_alcaholRowByFK_gu_batch_gu_alcahol[0];
@@ -928,7 +973,7 @@ namespace Inventory_Management_Project {
                 this.columngyle = base.Columns["gyle"];
                 this.columncontainer_id = base.Columns["container_id"];
                 this.columnnumber_of_items = base.Columns["number_of_items"];
-                this.columnstorage_location = base.Columns["storage_location"];
+                this.columnlocation_id = base.Columns["location_id"];
                 this.columnfilled = base.Columns["filled"];
                 this.columndate_filled = base.Columns["date_filled"];
                 this.columnpackaged = base.Columns["packaged"];
@@ -944,8 +989,8 @@ namespace Inventory_Management_Project {
                 base.Columns.Add(this.columncontainer_id);
                 this.columnnumber_of_items = new global::System.Data.DataColumn("number_of_items", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnumber_of_items);
-                this.columnstorage_location = new global::System.Data.DataColumn("storage_location", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstorage_location);
+                this.columnlocation_id = new global::System.Data.DataColumn("location_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlocation_id);
                 this.columnfilled = new global::System.Data.DataColumn("filled", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfilled);
                 this.columndate_filled = new global::System.Data.DataColumn("date_filled", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -961,11 +1006,9 @@ namespace Inventory_Management_Project {
                 this.columngyle.MaxLength = 10;
                 this.columncontainer_id.AllowDBNull = false;
                 this.columnnumber_of_items.AllowDBNull = false;
-                this.columnstorage_location.AllowDBNull = false;
-                this.columnstorage_location.MaxLength = 20;
+                this.columnlocation_id.AllowDBNull = false;
                 this.columnfilled.AllowDBNull = false;
                 this.columnfilled.MaxLength = 1;
-                this.columndate_filled.AllowDBNull = false;
                 this.columnpackaged.AllowDBNull = false;
                 this.columnpackaged.MaxLength = 1;
                 this.columndrink_id.AllowDBNull = false;
@@ -1036,7 +1079,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                gu_tables ds = new gu_tables();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1361,7 +1404,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                gu_tables ds = new gu_tables();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1380,6 +1423,280 @@ namespace Inventory_Management_Project {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "gu_dutyDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class gu_locationDataTable : global::System.Data.TypedTableBase<gu_locationRow> {
+            
+            private global::System.Data.DataColumn columnlocation_id;
+            
+            private global::System.Data.DataColumn columnstorage_location;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationDataTable() {
+                this.TableName = "gu_location";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal gu_locationDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected gu_locationDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn location_idColumn {
+                get {
+                    return this.columnlocation_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn storage_locationColumn {
+                get {
+                    return this.columnstorage_location;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow this[int index] {
+                get {
+                    return ((gu_locationRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event gu_locationRowChangeEventHandler gu_locationRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event gu_locationRowChangeEventHandler gu_locationRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event gu_locationRowChangeEventHandler gu_locationRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event gu_locationRowChangeEventHandler gu_locationRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addgu_locationRow(gu_locationRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow Addgu_locationRow(int location_id, string storage_location) {
+                gu_locationRow rowgu_locationRow = ((gu_locationRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        location_id,
+                        storage_location};
+                rowgu_locationRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowgu_locationRow);
+                return rowgu_locationRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow FindBylocation_id(int location_id) {
+                return ((gu_locationRow)(this.Rows.Find(new object[] {
+                            location_id})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                gu_locationDataTable cln = ((gu_locationDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new gu_locationDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnlocation_id = base.Columns["location_id"];
+                this.columnstorage_location = base.Columns["storage_location"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnlocation_id = new global::System.Data.DataColumn("location_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnlocation_id);
+                this.columnstorage_location = new global::System.Data.DataColumn("storage_location", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnstorage_location);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnlocation_id}, true));
+                this.columnlocation_id.AllowDBNull = false;
+                this.columnlocation_id.Unique = true;
+                this.columnstorage_location.AllowDBNull = false;
+                this.columnstorage_location.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow Newgu_locationRow() {
+                return ((gu_locationRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new gu_locationRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(gu_locationRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.gu_locationRowChanged != null)) {
+                    this.gu_locationRowChanged(this, new gu_locationRowChangeEvent(((gu_locationRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.gu_locationRowChanging != null)) {
+                    this.gu_locationRowChanging(this, new gu_locationRowChangeEvent(((gu_locationRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.gu_locationRowDeleted != null)) {
+                    this.gu_locationRowDeleted(this, new gu_locationRowChangeEvent(((gu_locationRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.gu_locationRowDeleting != null)) {
+                    this.gu_locationRowDeleting(this, new gu_locationRowChangeEvent(((gu_locationRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removegu_locationRow(gu_locationRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                gu_tables ds = new gu_tables();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "gu_locationDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1714,7 +2031,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                gu_tables ds = new gu_tables();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2003,7 +2320,7 @@ namespace Inventory_Management_Project {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                graded_unitDataSet ds = new graded_unitDataSet();
+                gu_tables ds = new gu_tables();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2170,12 +2487,12 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string storage_location {
+            public int location_id {
                 get {
-                    return ((string)(this[this.tablegu_batch.storage_locationColumn]));
+                    return ((int)(this[this.tablegu_batch.location_idColumn]));
                 }
                 set {
-                    this[this.tablegu_batch.storage_locationColumn] = value;
+                    this[this.tablegu_batch.location_idColumn] = value;
                 }
             }
             
@@ -2194,7 +2511,12 @@ namespace Inventory_Management_Project {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime date_filled {
                 get {
-                    return ((global::System.DateTime)(this[this.tablegu_batch.date_filledColumn]));
+                    try {
+                        return ((global::System.DateTime)(this[this.tablegu_batch.date_filledColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'date_filled\' in table \'gu_batch\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablegu_batch.date_filledColumn] = value;
@@ -2236,6 +2558,17 @@ namespace Inventory_Management_Project {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow gu_locationRow {
+                get {
+                    return ((gu_locationRow)(this.GetParentRow(this.Table.ParentRelations["FK_gu_batch_gu_location"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_gu_batch_gu_location"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public gu_storageRow gu_storageRow {
                 get {
                     return ((gu_storageRow)(this.GetParentRow(this.Table.ParentRelations["FK_gu_batch_gu_storage"])));
@@ -2243,6 +2576,18 @@ namespace Inventory_Management_Project {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_gu_batch_gu_storage"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isdate_filledNull() {
+                return this.IsNull(this.tablegu_batch.date_filledColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setdate_filledNull() {
+                this[this.tablegu_batch.date_filledColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2323,6 +2668,54 @@ namespace Inventory_Management_Project {
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_gu_duty_gu_staff"]);
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class gu_locationRow : global::System.Data.DataRow {
+            
+            private gu_locationDataTable tablegu_location;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal gu_locationRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablegu_location = ((gu_locationDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int location_id {
+                get {
+                    return ((int)(this[this.tablegu_location.location_idColumn]));
+                }
+                set {
+                    this[this.tablegu_location.location_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string storage_location {
+                get {
+                    return ((string)(this[this.tablegu_location.storage_locationColumn]));
+                }
+                set {
+                    this[this.tablegu_location.storage_locationColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_batchRow[] Getgu_batchRows() {
+                if ((this.Table.ChildRelations["FK_gu_batch_gu_location"] == null)) {
+                    return new gu_batchRow[0];
+                }
+                else {
+                    return ((gu_batchRow[])(base.GetChildRows(this.Table.ChildRelations["FK_gu_batch_gu_location"])));
                 }
             }
         }
@@ -2612,6 +3005,40 @@ namespace Inventory_Management_Project {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class gu_locationRowChangeEvent : global::System.EventArgs {
+            
+            private gu_locationRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRowChangeEvent(gu_locationRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gu_locationRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class gu_staffRowChangeEvent : global::System.EventArgs {
             
             private gu_staffRow eventRow;
@@ -2677,7 +3104,7 @@ namespace Inventory_Management_Project {
         }
     }
 }
-namespace Inventory_Management_Project.graded_unitDataSetTableAdapters {
+namespace Inventory_Management_Project.gu_tablesTableAdapters {
     
     
     /// <summary>
@@ -2856,7 +3283,7 @@ SELECT drink_id, drink_type, abv FROM gu_alcahol WHERE (drink_id = @drink_id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_alcaholDataTable dataTable) {
+        public virtual int Fill(gu_tables.gu_alcaholDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2869,9 +3296,9 @@ SELECT drink_id, drink_type, abv FROM gu_alcahol WHERE (drink_id = @drink_id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_alcaholDataTable GetData() {
+        public virtual gu_tables.gu_alcaholDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_alcaholDataTable dataTable = new graded_unitDataSet.gu_alcaholDataTable();
+            gu_tables.gu_alcaholDataTable dataTable = new gu_tables.gu_alcaholDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2879,14 +3306,14 @@ SELECT drink_id, drink_type, abv FROM gu_alcahol WHERE (drink_id = @drink_id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_alcaholDataTable dataTable) {
+        public virtual int Update(gu_tables.gu_alcaholDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
+        public virtual int Update(gu_tables dataSet) {
             return this.Adapter.Update(dataSet, "gu_alcahol");
         }
         
@@ -3133,7 +3560,7 @@ SELECT drink_id, drink_type, abv FROM gu_alcahol WHERE (drink_id = @drink_id)";
             tableMapping.ColumnMappings.Add("gyle", "gyle");
             tableMapping.ColumnMappings.Add("container_id", "container_id");
             tableMapping.ColumnMappings.Add("number_of_items", "number_of_items");
-            tableMapping.ColumnMappings.Add("storage_location", "storage_location");
+            tableMapping.ColumnMappings.Add("location_id", "location_id");
             tableMapping.ColumnMappings.Add("filled", "filled");
             tableMapping.ColumnMappings.Add("date_filled", "date_filled");
             tableMapping.ColumnMappings.Add("packaged", "packaged");
@@ -3141,38 +3568,39 @@ SELECT drink_id, drink_type, abv FROM gu_alcahol WHERE (drink_id = @drink_id)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[gu_batch] WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([storage_location] = @Original_storage_location) AND ([filled] = @Original_filled) AND ([date_filled] = @Original_date_filled) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[gu_batch] WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([location_id] = @Original_location_id) AND ([filled] = @Original_filled) AND ((@IsNull_date_filled = 1 AND [date_filled] IS NULL) OR ([date_filled] = @Original_date_filled)) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_date_filled", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[gu_batch] ([gyle], [container_id], [number_of_items], [storage_location], [filled], [date_filled], [packaged], [drink_id]) VALUES (@gyle, @container_id, @number_of_items, @storage_location, @filled, @date_filled, @packaged, @drink_id);
-SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[gu_batch] ([gyle], [container_id], [number_of_items], [location_id], [filled], [date_filled], [packaged], [drink_id]) VALUES (@gyle, @container_id, @number_of_items, @location_id, @filled, @date_filled, @packaged, @drink_id);
+SELECT gyle, container_id, number_of_items, location_id, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[gu_batch] SET [gyle] = @gyle, [container_id] = @container_id, [number_of_items] = @number_of_items, [storage_location] = @storage_location, [filled] = @filled, [date_filled] = @date_filled, [packaged] = @packaged, [drink_id] = @drink_id WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([storage_location] = @Original_storage_location) AND ([filled] = @Original_filled) AND ([date_filled] = @Original_date_filled) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id));
-SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[gu_batch] SET [gyle] = @gyle, [container_id] = @container_id, [number_of_items] = @number_of_items, [location_id] = @location_id, [filled] = @filled, [date_filled] = @date_filled, [packaged] = @packaged, [drink_id] = @drink_id WHERE (([gyle] = @Original_gyle) AND ([container_id] = @Original_container_id) AND ([number_of_items] = @Original_number_of_items) AND ([location_id] = @Original_location_id) AND ([filled] = @Original_filled) AND ((@IsNull_date_filled = 1 AND [date_filled] IS NULL) OR ([date_filled] = @Original_date_filled)) AND ([packaged] = @Original_packaged) AND ([drink_id] = @Original_drink_id));
+SELECT gyle, container_id, number_of_items, location_id, filled, date_filled, packaged, drink_id FROM gu_batch WHERE (gyle = @gyle)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3180,8 +3608,9 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gyle", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gyle", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_container_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "container_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_number_of_items", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 0, "number_of_items", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_filled", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_date_filled", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_filled", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_filled", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_packaged", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "packaged", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_drink_id", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 0, "drink_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -3200,8 +3629,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT gyle, container_id, number_of_items, storage_location, filled, date_filled" +
-                ", packaged, drink_id FROM dbo.gu_batch";
+            this._commandCollection[0].CommandText = "SELECT gyle, container_id, number_of_items, location_id, filled, date_filled, pac" +
+                "kaged, drink_id FROM dbo.gu_batch";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3209,7 +3638,7 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_batchDataTable dataTable) {
+        public virtual int Fill(gu_tables.gu_batchDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3222,9 +3651,9 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_batchDataTable GetData() {
+        public virtual gu_tables.gu_batchDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_batchDataTable dataTable = new graded_unitDataSet.gu_batchDataTable();
+            gu_tables.gu_batchDataTable dataTable = new gu_tables.gu_batchDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3232,14 +3661,14 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_batchDataTable dataTable) {
+        public virtual int Update(gu_tables.gu_batchDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
+        public virtual int Update(gu_tables dataSet) {
             return this.Adapter.Update(dataSet, "gu_batch");
         }
         
@@ -3262,7 +3691,7 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, string Original_storage_location, string Original_filled, System.DateTime Original_date_filled, string Original_packaged, decimal Original_drink_id) {
+        public virtual int Delete(string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, int Original_location_id, string Original_filled, global::System.Nullable<global::System.DateTime> Original_date_filled, string Original_packaged, decimal Original_drink_id) {
             if ((Original_gyle == null)) {
                 throw new global::System.ArgumentNullException("Original_gyle");
             }
@@ -3271,26 +3700,28 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             }
             this.Adapter.DeleteCommand.Parameters[1].Value = ((decimal)(Original_container_id));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_number_of_items));
-            if ((Original_storage_location == null)) {
-                throw new global::System.ArgumentNullException("Original_storage_location");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_storage_location));
-            }
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_location_id));
             if ((Original_filled == null)) {
                 throw new global::System.ArgumentNullException("Original_filled");
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_filled));
             }
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((System.DateTime)(Original_date_filled));
+            if ((Original_date_filled.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_date_filled.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
             if ((Original_packaged == null)) {
                 throw new global::System.ArgumentNullException("Original_packaged");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_packaged));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_packaged));
             }
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((decimal)(Original_drink_id));
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_drink_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3311,7 +3742,7 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string gyle, decimal container_id, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, decimal drink_id) {
+        public virtual int Insert(string gyle, decimal container_id, decimal number_of_items, int location_id, string filled, global::System.Nullable<global::System.DateTime> date_filled, string packaged, decimal drink_id) {
             if ((gyle == null)) {
                 throw new global::System.ArgumentNullException("gyle");
             }
@@ -3320,19 +3751,19 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             }
             this.Adapter.InsertCommand.Parameters[1].Value = ((decimal)(container_id));
             this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(number_of_items));
-            if ((storage_location == null)) {
-                throw new global::System.ArgumentNullException("storage_location");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(storage_location));
-            }
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(location_id));
             if ((filled == null)) {
                 throw new global::System.ArgumentNullException("filled");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(filled));
             }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(date_filled));
+            if ((date_filled.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(date_filled.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             if ((packaged == null)) {
                 throw new global::System.ArgumentNullException("packaged");
             }
@@ -3364,17 +3795,17 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
                     string gyle, 
                     decimal container_id, 
                     decimal number_of_items, 
-                    string storage_location, 
+                    int location_id, 
                     string filled, 
-                    System.DateTime date_filled, 
+                    global::System.Nullable<global::System.DateTime> date_filled, 
                     string packaged, 
                     decimal drink_id, 
                     string Original_gyle, 
                     decimal Original_container_id, 
                     decimal Original_number_of_items, 
-                    string Original_storage_location, 
+                    int Original_location_id, 
                     string Original_filled, 
-                    System.DateTime Original_date_filled, 
+                    global::System.Nullable<global::System.DateTime> Original_date_filled, 
                     string Original_packaged, 
                     decimal Original_drink_id) {
             if ((gyle == null)) {
@@ -3385,19 +3816,19 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             }
             this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(container_id));
             this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(number_of_items));
-            if ((storage_location == null)) {
-                throw new global::System.ArgumentNullException("storage_location");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(storage_location));
-            }
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(location_id));
             if ((filled == null)) {
                 throw new global::System.ArgumentNullException("filled");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(filled));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(date_filled));
+            if ((date_filled.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(date_filled.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             if ((packaged == null)) {
                 throw new global::System.ArgumentNullException("packaged");
             }
@@ -3413,26 +3844,28 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(Original_container_id));
             this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_number_of_items));
-            if ((Original_storage_location == null)) {
-                throw new global::System.ArgumentNullException("Original_storage_location");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_storage_location));
-            }
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_location_id));
             if ((Original_filled == null)) {
                 throw new global::System.ArgumentNullException("Original_filled");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_filled));
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_date_filled));
+            if ((Original_date_filled.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_date_filled.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
             if ((Original_packaged == null)) {
                 throw new global::System.ArgumentNullException("Original_packaged");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_packaged));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_packaged));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_drink_id));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((decimal)(Original_drink_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3453,8 +3886,8 @@ SELECT gyle, container_id, number_of_items, storage_location, filled, date_fille
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(decimal container_id, decimal number_of_items, string storage_location, string filled, System.DateTime date_filled, string packaged, decimal drink_id, string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, string Original_storage_location, string Original_filled, System.DateTime Original_date_filled, string Original_packaged, decimal Original_drink_id) {
-            return this.Update(Original_gyle, container_id, number_of_items, storage_location, filled, date_filled, packaged, drink_id, Original_gyle, Original_container_id, Original_number_of_items, Original_storage_location, Original_filled, Original_date_filled, Original_packaged, Original_drink_id);
+        public virtual int Update(decimal container_id, decimal number_of_items, int location_id, string filled, global::System.Nullable<global::System.DateTime> date_filled, string packaged, decimal drink_id, string Original_gyle, decimal Original_container_id, decimal Original_number_of_items, int Original_location_id, string Original_filled, global::System.Nullable<global::System.DateTime> Original_date_filled, string Original_packaged, decimal Original_drink_id) {
+            return this.Update(Original_gyle, container_id, number_of_items, location_id, filled, date_filled, packaged, drink_id, Original_gyle, Original_container_id, Original_number_of_items, Original_location_id, Original_filled, Original_date_filled, Original_packaged, Original_drink_id);
         }
     }
     
@@ -3646,7 +4079,7 @@ SELECT gyle, staff_id, stamp_start_number, stamp_end_number, duty_status FROM gu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_dutyDataTable dataTable) {
+        public virtual int Fill(gu_tables.gu_dutyDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3659,9 +4092,9 @@ SELECT gyle, staff_id, stamp_start_number, stamp_end_number, duty_status FROM gu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_dutyDataTable GetData() {
+        public virtual gu_tables.gu_dutyDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_dutyDataTable dataTable = new graded_unitDataSet.gu_dutyDataTable();
+            gu_tables.gu_dutyDataTable dataTable = new gu_tables.gu_dutyDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3669,14 +4102,14 @@ SELECT gyle, staff_id, stamp_start_number, stamp_end_number, duty_status FROM gu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_dutyDataTable dataTable) {
+        public virtual int Update(gu_tables.gu_dutyDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
+        public virtual int Update(gu_tables dataSet) {
             return this.Adapter.Update(dataSet, "gu_duty");
         }
         
@@ -3864,6 +4297,326 @@ SELECT gyle, staff_id, stamp_start_number, stamp_end_number, duty_status FROM gu
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(decimal staff_id, string stamp_start_number, string stamp_end_number, string duty_status, string Original_gyle, decimal Original_staff_id, string Original_stamp_start_number, string Original_stamp_end_number, string Original_duty_status) {
             return this.Update(Original_gyle, staff_id, stamp_start_number, stamp_end_number, duty_status, Original_gyle, Original_staff_id, Original_stamp_start_number, Original_stamp_end_number, Original_duty_status);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class gu_locationTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public gu_locationTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "gu_location";
+            tableMapping.ColumnMappings.Add("location_id", "location_id");
+            tableMapping.ColumnMappings.Add("storage_location", "storage_location");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[gu_location] WHERE (([location_id] = @Original_location_id) AN" +
+                "D ([storage_location] = @Original_storage_location))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[gu_location] ([location_id], [storage_location]) VALUES (@loca" +
+                "tion_id, @storage_location);\r\nSELECT location_id, storage_location FROM gu_locat" +
+                "ion WHERE (location_id = @location_id)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[gu_location] SET [location_id] = @location_id, [storage_location] = @storage_location WHERE (([location_id] = @Original_location_id) AND ([storage_location] = @Original_storage_location));
+SELECT location_id, storage_location FROM gu_location WHERE (location_id = @location_id)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_location_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "location_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_storage_location", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "storage_location", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Inventory_Management_Project.Properties.Settings.Default.graded_unitConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT location_id, storage_location FROM dbo.gu_location";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(gu_tables.gu_locationDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual gu_tables.gu_locationDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            gu_tables.gu_locationDataTable dataTable = new gu_tables.gu_locationDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(gu_tables.gu_locationDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(gu_tables dataSet) {
+            return this.Adapter.Update(dataSet, "gu_location");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_location_id, string Original_storage_location) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_location_id));
+            if ((Original_storage_location == null)) {
+                throw new global::System.ArgumentNullException("Original_storage_location");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_storage_location));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int location_id, string storage_location) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(location_id));
+            if ((storage_location == null)) {
+                throw new global::System.ArgumentNullException("storage_location");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(storage_location));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int location_id, string storage_location, int Original_location_id, string Original_storage_location) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(location_id));
+            if ((storage_location == null)) {
+                throw new global::System.ArgumentNullException("storage_location");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(storage_location));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_location_id));
+            if ((Original_storage_location == null)) {
+                throw new global::System.ArgumentNullException("Original_storage_location");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_storage_location));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string storage_location, int Original_location_id, string Original_storage_location) {
+            return this.Update(Original_location_id, storage_location, Original_location_id, Original_storage_location);
         }
     }
     
@@ -4064,7 +4817,7 @@ SELECT staff_id, department, first_name, last_name, phone, mobile, email FROM gu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_staffDataTable dataTable) {
+        public virtual int Fill(gu_tables.gu_staffDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4077,9 +4830,9 @@ SELECT staff_id, department, first_name, last_name, phone, mobile, email FROM gu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_staffDataTable GetData() {
+        public virtual gu_tables.gu_staffDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_staffDataTable dataTable = new graded_unitDataSet.gu_staffDataTable();
+            gu_tables.gu_staffDataTable dataTable = new gu_tables.gu_staffDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4087,14 +4840,14 @@ SELECT staff_id, department, first_name, last_name, phone, mobile, email FROM gu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_staffDataTable dataTable) {
+        public virtual int Update(gu_tables.gu_staffDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
+        public virtual int Update(gu_tables dataSet) {
             return this.Adapter.Update(dataSet, "gu_staff");
         }
         
@@ -4513,7 +5266,7 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(graded_unitDataSet.gu_storageDataTable dataTable) {
+        public virtual int Fill(gu_tables.gu_storageDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4526,9 +5279,9 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual graded_unitDataSet.gu_storageDataTable GetData() {
+        public virtual gu_tables.gu_storageDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            graded_unitDataSet.gu_storageDataTable dataTable = new graded_unitDataSet.gu_storageDataTable();
+            gu_tables.gu_storageDataTable dataTable = new gu_tables.gu_storageDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4536,14 +5289,14 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet.gu_storageDataTable dataTable) {
+        public virtual int Update(gu_tables.gu_storageDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(graded_unitDataSet dataSet) {
+        public virtual int Update(gu_tables dataSet) {
             return this.Adapter.Update(dataSet, "gu_storage");
         }
         
@@ -4684,6 +5437,8 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         
         private gu_dutyTableAdapter _gu_dutyTableAdapter;
         
+        private gu_locationTableAdapter _gu_locationTableAdapter;
+        
         private gu_staffTableAdapter _gu_staffTableAdapter;
         
         private gu_storageTableAdapter _gu_storageTableAdapter;
@@ -4750,6 +5505,20 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
+        public gu_locationTableAdapter gu_locationTableAdapter {
+            get {
+                return this._gu_locationTableAdapter;
+            }
+            set {
+                this._gu_locationTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
         public gu_staffTableAdapter gu_staffTableAdapter {
             get {
                 return this._gu_staffTableAdapter;
@@ -4804,6 +5573,10 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                             && (this._gu_dutyTableAdapter.Connection != null))) {
                     return this._gu_dutyTableAdapter.Connection;
                 }
+                if (((this._gu_locationTableAdapter != null) 
+                            && (this._gu_locationTableAdapter.Connection != null))) {
+                    return this._gu_locationTableAdapter.Connection;
+                }
                 if (((this._gu_staffTableAdapter != null) 
                             && (this._gu_staffTableAdapter.Connection != null))) {
                     return this._gu_staffTableAdapter.Connection;
@@ -4834,6 +5607,9 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                 if ((this._gu_dutyTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._gu_locationTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 if ((this._gu_staffTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -4849,7 +5625,7 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(gu_tables dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._gu_alcaholTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.gu_alcahol.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -4857,6 +5633,15 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._gu_alcaholTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._gu_locationTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.gu_location.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._gu_locationTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -4904,13 +5689,21 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(gu_tables dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._gu_alcaholTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.gu_alcahol.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._gu_alcaholTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._gu_locationTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.gu_location.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._gu_locationTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -4954,7 +5747,7 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(graded_unitDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(gu_tables dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._gu_dutyTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.gu_duty.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -4985,6 +5778,14 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._gu_staffTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._gu_locationTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.gu_location.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._gu_locationTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -5028,7 +5829,7 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(graded_unitDataSet dataSet) {
+        public virtual int UpdateAll(gu_tables dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
@@ -5047,6 +5848,11 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
             }
             if (((this._gu_dutyTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._gu_dutyTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._gu_locationTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._gu_locationTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -5117,6 +5923,15 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                     if (this._gu_dutyTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._gu_dutyTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._gu_dutyTableAdapter.Adapter);
+                    }
+                }
+                if ((this._gu_locationTableAdapter != null)) {
+                    revertConnections.Add(this._gu_locationTableAdapter, this._gu_locationTableAdapter.Connection);
+                    this._gu_locationTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._gu_locationTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._gu_locationTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._gu_locationTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._gu_locationTableAdapter.Adapter);
                     }
                 }
                 if ((this._gu_staffTableAdapter != null)) {
@@ -5206,6 +6021,10 @@ SELECT container_id, container, size FROM gu_storage WHERE (container_id = @cont
                 if ((this._gu_dutyTableAdapter != null)) {
                     this._gu_dutyTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gu_dutyTableAdapter]));
                     this._gu_dutyTableAdapter.Transaction = null;
+                }
+                if ((this._gu_locationTableAdapter != null)) {
+                    this._gu_locationTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gu_locationTableAdapter]));
+                    this._gu_locationTableAdapter.Transaction = null;
                 }
                 if ((this._gu_staffTableAdapter != null)) {
                     this._gu_staffTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._gu_staffTableAdapter]));

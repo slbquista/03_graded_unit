@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,40 +67,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="graded_unitDataSet.Designer.cs">
+    <Compile Include="gu_tables.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet.xsd</DependentUpon>
+      <DependentUpon>gu_tables.xsd</DependentUpon>
     </Compile>
-    <Compile Include="graded_unitDataSet1.Designer.cs">
+    <Compile Include="gu_views.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="graded_unitDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="graded_unitDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="graded_unitDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="graded_unitDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="graded_unitDataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>graded_unitDataSet6.xsd</DependentUpon>
+      <DependentUpon>gu_views.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,82 +91,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="graded_unitDataSet.xsc">
-      <DependentUpon>graded_unitDataSet.xsd</DependentUpon>
+    <None Include="gu_tables.xsc">
+      <DependentUpon>gu_tables.xsd</DependentUpon>
     </None>
-    <None Include="graded_unitDataSet.xsd">
+    <None Include="gu_tables.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>gu_tables.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="graded_unitDataSet.xss">
-      <DependentUpon>graded_unitDataSet.xsd</DependentUpon>
+    <None Include="gu_tables.xss">
+      <DependentUpon>gu_tables.xsd</DependentUpon>
     </None>
-    <None Include="graded_unitDataSet1.xsc">
-      <DependentUpon>graded_unitDataSet1.xsd</DependentUpon>
+    <None Include="gu_views.xsc">
+      <DependentUpon>gu_views.xsd</DependentUpon>
     </None>
-    <None Include="graded_unitDataSet1.xsd">
+    <None Include="gu_views.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>gu_views.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="graded_unitDataSet1.xss">
-      <DependentUpon>graded_unitDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet2.xsc">
-      <DependentUpon>graded_unitDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="graded_unitDataSet2.xss">
-      <DependentUpon>graded_unitDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet3.xsc">
-      <DependentUpon>graded_unitDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="graded_unitDataSet3.xss">
-      <DependentUpon>graded_unitDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet4.xsc">
-      <DependentUpon>graded_unitDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="graded_unitDataSet4.xss">
-      <DependentUpon>graded_unitDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet5.xsc">
-      <DependentUpon>graded_unitDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="graded_unitDataSet5.xss">
-      <DependentUpon>graded_unitDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet6.xsc">
-      <DependentUpon>graded_unitDataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="graded_unitDataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>graded_unitDataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="graded_unitDataSet6.xss">
-      <DependentUpon>graded_unitDataSet6.xsd</DependentUpon>
+    <None Include="gu_views.xss">
+      <DependentUpon>gu_views.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -190,6 +125,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

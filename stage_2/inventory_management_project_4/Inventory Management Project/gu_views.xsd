@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gu_views" targetNamespace="http://tempuri.org/gu_views.xsd" xmlns:mstns="http://tempuri.org/gu_views.xsd" xmlns="http://tempuri.org/gu_views.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="graded_unitConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="graded_unitConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Inventory_Management_Project.Properties.Settings.GlobalReference.Default.graded_unitConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="packagingDutyRecordsViewTableAdapter" GeneratorDataComponentClassName="packagingDutyRecordsViewTableAdapter" Name="packagingDutyRecordsView" UserDataComponentName="packagingDutyRecordsViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.packagingDutyRecordsView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Gyle, [Start number], [End number], Status, Employee FROM dbo.packagingDutyRecordsView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gyle" DataSetColumn="Gyle" />
+              <Mapping SourceColumn="Start number" DataSetColumn="Start number" />
+              <Mapping SourceColumn="End number" DataSetColumn="End number" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Employee" DataSetColumn="Employee" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="packagingStockViewTableAdapter" GeneratorDataComponentClassName="packagingStockViewTableAdapter" Name="packagingStockView" UserDataComponentName="packagingStockViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.packagingStockView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Gyle, Drink, Container, Quantity, [Packaged?], Location, [Date Filled], [Filled?] FROM packagingStockView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gyle" DataSetColumn="Gyle" />
+              <Mapping SourceColumn="Drink" DataSetColumn="Drink" />
+              <Mapping SourceColumn="Container" DataSetColumn="Container" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Packaged?" DataSetColumn="Packaged?" />
+              <Mapping SourceColumn="Location" DataSetColumn="Location" />
+              <Mapping SourceColumn="Filled?" DataSetColumn="Filled?" />
+              <Mapping SourceColumn="Date Filled" DataSetColumn="Date Filled" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="productionViewTableAdapter" GeneratorDataComponentClassName="productionViewTableAdapter" Name="productionView" UserDataComponentName="productionViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.productionView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Gyle, Drink, ABV, Quantity, Container, [Size (ml)] FROM dbo.productionView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Gyle" DataSetColumn="Gyle" />
+              <Mapping SourceColumn="Drink" DataSetColumn="Drink" />
+              <Mapping SourceColumn="ABV" DataSetColumn="ABV" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Container" DataSetColumn="Container" />
+              <Mapping SourceColumn="Size (ml)" DataSetColumn="Size (ml)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="salesAvailableViewTableAdapter" GeneratorDataComponentClassName="salesAvailableViewTableAdapter" Name="salesAvailableView" UserDataComponentName="salesAvailableViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.salesAvailableView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Drink, Container, Quantity, Gyle FROM salesAvailableView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Drink" DataSetColumn="Drink" />
+              <Mapping SourceColumn="Container" DataSetColumn="Container" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Gyle" DataSetColumn="Gyle" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="packagingDutySelectViewTableAdapter" GeneratorDataComponentClassName="packagingDutySelectViewTableAdapter" Name="packagingDutySelectView" UserDataComponentName="packagingDutySelectViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.packagingDutySelectView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT gyle, container_id, number_of_items, location_id, filled, date_filled, packaged, drink_id FROM dbo.packagingDutySelectView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="gyle" DataSetColumn="gyle" />
+              <Mapping SourceColumn="container_id" DataSetColumn="container_id" />
+              <Mapping SourceColumn="number_of_items" DataSetColumn="number_of_items" />
+              <Mapping SourceColumn="location_id" DataSetColumn="location_id" />
+              <Mapping SourceColumn="filled" DataSetColumn="filled" />
+              <Mapping SourceColumn="date_filled" DataSetColumn="date_filled" />
+              <Mapping SourceColumn="packaged" DataSetColumn="packaged" />
+              <Mapping SourceColumn="drink_id" DataSetColumn="drink_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="packagingBottlingSelectViewTableAdapter" GeneratorDataComponentClassName="packagingBottlingSelectViewTableAdapter" Name="packagingBottlingSelectView" UserDataComponentName="packagingBottlingSelectViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="graded_unitConnectionString (Settings)" DbObjectName="dbo.packagingBottlingSelectView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT gyle, container_id, number_of_items, location_id, filled, date_filled, packaged, drink_id FROM dbo.packagingBottlingSelectView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="gyle" DataSetColumn="gyle" />
+              <Mapping SourceColumn="container_id" DataSetColumn="container_id" />
+              <Mapping SourceColumn="number_of_items" DataSetColumn="number_of_items" />
+              <Mapping SourceColumn="location_id" DataSetColumn="location_id" />
+              <Mapping SourceColumn="filled" DataSetColumn="filled" />
+              <Mapping SourceColumn="date_filled" DataSetColumn="date_filled" />
+              <Mapping SourceColumn="packaged" DataSetColumn="packaged" />
+              <Mapping SourceColumn="drink_id" DataSetColumn="drink_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gu_views" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gu_views" msprop:Generator_UserDSName="gu_views">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="packagingDutyRecordsView" msprop:Generator_TableClassName="packagingDutyRecordsViewDataTable" msprop:Generator_TableVarName="tablepackagingDutyRecordsView" msprop:Generator_TablePropName="packagingDutyRecordsView" msprop:Generator_RowDeletingName="packagingDutyRecordsViewRowDeleting" msprop:Generator_RowChangingName="packagingDutyRecordsViewRowChanging" msprop:Generator_RowEvHandlerName="packagingDutyRecordsViewRowChangeEventHandler" msprop:Generator_RowDeletedName="packagingDutyRecordsViewRowDeleted" msprop:Generator_UserTableName="packagingDutyRecordsView" msprop:Generator_RowChangedName="packagingDutyRecordsViewRowChanged" msprop:Generator_RowEvArgName="packagingDutyRecordsViewRowChangeEvent" msprop:Generator_RowClassName="packagingDutyRecordsViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gyle" msprop:Generator_ColumnVarNameInTable="columnGyle" msprop:Generator_ColumnPropNameInRow="Gyle" msprop:Generator_ColumnPropNameInTable="GyleColumn" msprop:Generator_UserColumnName="Gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Start_x0020_number" msprop:Generator_ColumnVarNameInTable="columnStart_number" msprop:Generator_ColumnPropNameInRow="Start_number" msprop:Generator_ColumnPropNameInTable="Start_numberColumn" msprop:Generator_UserColumnName="Start number">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="End_x0020_number" msprop:Generator_ColumnVarNameInTable="columnEnd_number" msprop:Generator_ColumnPropNameInRow="End_number" msprop:Generator_ColumnPropNameInTable="End_numberColumn" msprop:Generator_UserColumnName="End number">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEmployee" msprop:Generator_ColumnPropNameInRow="Employee" msprop:Generator_ColumnPropNameInTable="EmployeeColumn" msprop:Generator_UserColumnName="Employee" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="packagingStockView" msprop:Generator_TableClassName="packagingStockViewDataTable" msprop:Generator_TableVarName="tablepackagingStockView" msprop:Generator_TablePropName="packagingStockView" msprop:Generator_RowDeletingName="packagingStockViewRowDeleting" msprop:Generator_RowChangingName="packagingStockViewRowChanging" msprop:Generator_RowEvHandlerName="packagingStockViewRowChangeEventHandler" msprop:Generator_RowDeletedName="packagingStockViewRowDeleted" msprop:Generator_UserTableName="packagingStockView" msprop:Generator_RowChangedName="packagingStockViewRowChanged" msprop:Generator_RowEvArgName="packagingStockViewRowChangeEvent" msprop:Generator_RowClassName="packagingStockViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gyle" msprop:Generator_ColumnVarNameInTable="columnGyle" msprop:Generator_ColumnPropNameInRow="Gyle" msprop:Generator_ColumnPropNameInTable="GyleColumn" msprop:Generator_UserColumnName="Gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Drink" msprop:Generator_ColumnVarNameInTable="columnDrink" msprop:Generator_ColumnPropNameInRow="Drink" msprop:Generator_ColumnPropNameInTable="DrinkColumn" msprop:Generator_UserColumnName="Drink">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Container" msprop:Generator_ColumnVarNameInTable="columnContainer" msprop:Generator_ColumnPropNameInRow="Container" msprop:Generator_ColumnPropNameInTable="ContainerColumn" msprop:Generator_UserColumnName="Container">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" />
+              <xs:element name="Packaged_x003F_" msprop:Generator_ColumnVarNameInTable="_columnPackaged_" msprop:Generator_ColumnPropNameInRow="_Packaged_" msprop:Generator_ColumnPropNameInTable="_Packaged_Column" msprop:Generator_UserColumnName="Packaged?">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Filled_x003F_" msprop:Generator_ColumnVarNameInTable="_columnFilled_" msprop:Generator_ColumnPropNameInRow="_Filled_" msprop:Generator_ColumnPropNameInTable="_Filled_Column" msprop:Generator_UserColumnName="Filled?">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date_x0020_Filled" msprop:Generator_ColumnVarNameInTable="columnDate_Filled" msprop:Generator_ColumnPropNameInRow="Date_Filled" msprop:Generator_ColumnPropNameInTable="Date_FilledColumn" msprop:Generator_UserColumnName="Date Filled" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="productionView" msprop:Generator_TableClassName="productionViewDataTable" msprop:Generator_TableVarName="tableproductionView" msprop:Generator_TablePropName="productionView" msprop:Generator_RowDeletingName="productionViewRowDeleting" msprop:Generator_RowChangingName="productionViewRowChanging" msprop:Generator_RowEvHandlerName="productionViewRowChangeEventHandler" msprop:Generator_RowDeletedName="productionViewRowDeleted" msprop:Generator_UserTableName="productionView" msprop:Generator_RowChangedName="productionViewRowChanged" msprop:Generator_RowEvArgName="productionViewRowChangeEvent" msprop:Generator_RowClassName="productionViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Gyle" msprop:Generator_ColumnVarNameInTable="columnGyle" msprop:Generator_ColumnPropNameInRow="Gyle" msprop:Generator_ColumnPropNameInTable="GyleColumn" msprop:Generator_UserColumnName="Gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Drink" msprop:Generator_ColumnVarNameInTable="columnDrink" msprop:Generator_ColumnPropNameInRow="Drink" msprop:Generator_ColumnPropNameInTable="DrinkColumn" msprop:Generator_UserColumnName="Drink">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ABV" msprop:Generator_ColumnVarNameInTable="columnABV" msprop:Generator_ColumnPropNameInRow="ABV" msprop:Generator_ColumnPropNameInTable="ABVColumn" msprop:Generator_UserColumnName="ABV" type="xs:decimal" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" />
+              <xs:element name="Container" msprop:Generator_ColumnVarNameInTable="columnContainer" msprop:Generator_ColumnPropNameInRow="Container" msprop:Generator_ColumnPropNameInTable="ContainerColumn" msprop:Generator_UserColumnName="Container">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size_x0020__x0028_ml_x0029_" msprop:Generator_ColumnVarNameInTable="_columnSize__ml_" msprop:Generator_ColumnPropNameInRow="_Size__ml_" msprop:Generator_ColumnPropNameInTable="_Size__ml_Column" msprop:Generator_UserColumnName="Size (ml)" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="salesAvailableView" msprop:Generator_TableClassName="salesAvailableViewDataTable" msprop:Generator_TableVarName="tablesalesAvailableView" msprop:Generator_TablePropName="salesAvailableView" msprop:Generator_RowDeletingName="salesAvailableViewRowDeleting" msprop:Generator_RowChangingName="salesAvailableViewRowChanging" msprop:Generator_RowEvHandlerName="salesAvailableViewRowChangeEventHandler" msprop:Generator_RowDeletedName="salesAvailableViewRowDeleted" msprop:Generator_UserTableName="salesAvailableView" msprop:Generator_RowChangedName="salesAvailableViewRowChanged" msprop:Generator_RowEvArgName="salesAvailableViewRowChangeEvent" msprop:Generator_RowClassName="salesAvailableViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Drink" msprop:Generator_ColumnVarNameInTable="columnDrink" msprop:Generator_ColumnPropNameInRow="Drink" msprop:Generator_ColumnPropNameInTable="DrinkColumn" msprop:Generator_UserColumnName="Drink">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Container" msprop:Generator_ColumnVarNameInTable="columnContainer" msprop:Generator_ColumnPropNameInRow="Container" msprop:Generator_ColumnPropNameInTable="ContainerColumn" msprop:Generator_UserColumnName="Container">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:decimal" />
+              <xs:element name="Gyle" msprop:Generator_ColumnVarNameInTable="columnGyle" msprop:Generator_ColumnPropNameInRow="Gyle" msprop:Generator_ColumnPropNameInTable="GyleColumn" msprop:Generator_UserColumnName="Gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="packagingDutySelectView" msprop:Generator_TableClassName="packagingDutySelectViewDataTable" msprop:Generator_TableVarName="tablepackagingDutySelectView" msprop:Generator_TablePropName="packagingDutySelectView" msprop:Generator_RowDeletingName="packagingDutySelectViewRowDeleting" msprop:Generator_RowChangingName="packagingDutySelectViewRowChanging" msprop:Generator_RowEvHandlerName="packagingDutySelectViewRowChangeEventHandler" msprop:Generator_RowDeletedName="packagingDutySelectViewRowDeleted" msprop:Generator_UserTableName="packagingDutySelectView" msprop:Generator_RowChangedName="packagingDutySelectViewRowChanged" msprop:Generator_RowEvArgName="packagingDutySelectViewRowChangeEvent" msprop:Generator_RowClassName="packagingDutySelectViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="gyle" msprop:Generator_ColumnVarNameInTable="columngyle" msprop:Generator_ColumnPropNameInRow="gyle" msprop:Generator_ColumnPropNameInTable="gyleColumn" msprop:Generator_UserColumnName="gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="container_id" msprop:Generator_ColumnVarNameInTable="columncontainer_id" msprop:Generator_ColumnPropNameInRow="container_id" msprop:Generator_ColumnPropNameInTable="container_idColumn" msprop:Generator_UserColumnName="container_id" type="xs:decimal" />
+              <xs:element name="number_of_items" msprop:Generator_ColumnVarNameInTable="columnnumber_of_items" msprop:Generator_ColumnPropNameInRow="number_of_items" msprop:Generator_ColumnPropNameInTable="number_of_itemsColumn" msprop:Generator_UserColumnName="number_of_items" type="xs:decimal" />
+              <xs:element name="location_id" msprop:Generator_ColumnVarNameInTable="columnlocation_id" msprop:Generator_ColumnPropNameInRow="location_id" msprop:Generator_ColumnPropNameInTable="location_idColumn" msprop:Generator_UserColumnName="location_id" type="xs:decimal" />
+              <xs:element name="filled" msprop:Generator_ColumnVarNameInTable="columnfilled" msprop:Generator_ColumnPropNameInRow="filled" msprop:Generator_ColumnPropNameInTable="filledColumn" msprop:Generator_UserColumnName="filled">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_filled" msprop:Generator_ColumnVarNameInTable="columndate_filled" msprop:Generator_ColumnPropNameInRow="date_filled" msprop:Generator_ColumnPropNameInTable="date_filledColumn" msprop:Generator_UserColumnName="date_filled" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="packaged" msprop:Generator_ColumnVarNameInTable="columnpackaged" msprop:Generator_ColumnPropNameInRow="packaged" msprop:Generator_ColumnPropNameInTable="packagedColumn" msprop:Generator_UserColumnName="packaged">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="drink_id" msprop:Generator_ColumnVarNameInTable="columndrink_id" msprop:Generator_ColumnPropNameInRow="drink_id" msprop:Generator_ColumnPropNameInTable="drink_idColumn" msprop:Generator_UserColumnName="drink_id" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="packagingBottlingSelectView" msprop:Generator_TableClassName="packagingBottlingSelectViewDataTable" msprop:Generator_TableVarName="tablepackagingBottlingSelectView" msprop:Generator_RowChangedName="packagingBottlingSelectViewRowChanged" msprop:Generator_TablePropName="packagingBottlingSelectView" msprop:Generator_RowDeletingName="packagingBottlingSelectViewRowDeleting" msprop:Generator_RowChangingName="packagingBottlingSelectViewRowChanging" msprop:Generator_RowEvHandlerName="packagingBottlingSelectViewRowChangeEventHandler" msprop:Generator_RowDeletedName="packagingBottlingSelectViewRowDeleted" msprop:Generator_RowClassName="packagingBottlingSelectViewRow" msprop:Generator_UserTableName="packagingBottlingSelectView" msprop:Generator_RowEvArgName="packagingBottlingSelectViewRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="gyle" msprop:Generator_ColumnVarNameInTable="columngyle" msprop:Generator_ColumnPropNameInRow="gyle" msprop:Generator_ColumnPropNameInTable="gyleColumn" msprop:Generator_UserColumnName="gyle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="container_id" msprop:Generator_ColumnVarNameInTable="columncontainer_id" msprop:Generator_ColumnPropNameInRow="container_id" msprop:Generator_ColumnPropNameInTable="container_idColumn" msprop:Generator_UserColumnName="container_id" type="xs:decimal" />
+              <xs:element name="number_of_items" msprop:Generator_ColumnVarNameInTable="columnnumber_of_items" msprop:Generator_ColumnPropNameInRow="number_of_items" msprop:Generator_ColumnPropNameInTable="number_of_itemsColumn" msprop:Generator_UserColumnName="number_of_items" type="xs:decimal" />
+              <xs:element name="location_id" msprop:Generator_ColumnVarNameInTable="columnlocation_id" msprop:Generator_ColumnPropNameInRow="location_id" msprop:Generator_ColumnPropNameInTable="location_idColumn" msprop:Generator_UserColumnName="location_id" type="xs:decimal" />
+              <xs:element name="filled" msprop:Generator_ColumnVarNameInTable="columnfilled" msprop:Generator_ColumnPropNameInRow="filled" msprop:Generator_ColumnPropNameInTable="filledColumn" msprop:Generator_UserColumnName="filled">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="date_filled" msprop:Generator_ColumnVarNameInTable="columndate_filled" msprop:Generator_ColumnPropNameInRow="date_filled" msprop:Generator_ColumnPropNameInTable="date_filledColumn" msprop:Generator_UserColumnName="date_filled" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="packaged" msprop:Generator_ColumnVarNameInTable="columnpackaged" msprop:Generator_ColumnPropNameInRow="packaged" msprop:Generator_ColumnPropNameInTable="packagedColumn" msprop:Generator_UserColumnName="packaged">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="drink_id" msprop:Generator_ColumnVarNameInTable="columndrink_id" msprop:Generator_ColumnPropNameInRow="drink_id" msprop:Generator_ColumnPropNameInTable="drink_idColumn" msprop:Generator_UserColumnName="drink_id" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:packagingDutyRecordsView" />
+      <xs:field xpath="mstns:Gyle" />
+    </xs:unique>
+    <xs:unique name="packagingStockView_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:packagingStockView" />
+      <xs:field xpath="mstns:Gyle" />
+    </xs:unique>
+    <xs:unique name="productionView_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:productionView" />
+      <xs:field xpath="mstns:Gyle" />
+    </xs:unique>
+    <xs:unique name="salesAvailableView_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:salesAvailableView" />
+      <xs:field xpath="mstns:Gyle" />
+    </xs:unique>
+    <xs:unique name="packagingDutySelectView_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:packagingDutySelectView" />
+      <xs:field xpath="mstns:gyle" />
+    </xs:unique>
+    <xs:unique name="packagingBottlingSelectView_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:packagingBottlingSelectView" />
+      <xs:field xpath="mstns:gyle" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
