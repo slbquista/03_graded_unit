@@ -9,9 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-//Change connection string drive letter in Properties > Settings.settings > Settings.Designer.cs
-//If this does work then change in Project Properties > Settings
-//Also change connection method dbConnect and dbDisconnect
+//Change database path name in Project Properties > Settings
+//Also change connection string 'con' below
 
 
 namespace Inventory_Management_Project
@@ -19,9 +18,9 @@ namespace Inventory_Management_Project
 	public partial class Form1 : Form
 	{
         //Defining the connection string to be used throughout the program
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\SQL Database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
+		SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=H:\software_development_year_2\03_graded_unit\stage_2\to_submit\sql_database\graded_unit.mdf;Integrated Security=False;Connect Timeout=30");
 
-        public Form1()
+		public Form1()
 		{
 			InitializeComponent();
 		}

@@ -26,8 +26,9 @@ namespace Inventory_Management_Project.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"E:\\SQL Database\\graded_unit." +
-            "mdf\";Integrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\software_development_year_" +
+            "2\\03_graded_unit\\stage_2\\to_submit\\sql_database\\graded_unit.mdf;Integrated Secur" +
+            "ity=False;Connect Timeout=30")]
         public string graded_unitConnectionString {
             get {
                 return ((string)(this["graded_unitConnectionString"]));
